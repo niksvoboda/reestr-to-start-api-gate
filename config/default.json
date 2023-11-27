@@ -1,0 +1,14 @@
+{
+  "version": "v1.0.0", 
+  "log":  {
+    "console" : "true"
+  },
+  "home": "/",
+  "db": {
+    "host": "127.0.0.1",
+    "user": "root",
+    "password": "",
+    "database": "arbitrage_parser",
+    "port": 3306
+  }
+}
