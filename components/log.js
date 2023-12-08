@@ -24,23 +24,23 @@ class Log {
         
         green(func) {
             if (this.enable) {
-                console.log(`${this.clc.greenBright(this.name)}${func}`);           
+                console.log(this.clc.greenBright(this.name + func));           
             }
         }
     
         yellow(func) {
             if (this.enable) {
-                console.log(`${this.clc.yellow(this.name)}${func}`);           
+                console.log(this.clc.yellow(this.name + func));           
         }
         }
         blue(func) {
             if (this.enable) {
-                console.log(`${this.clc.blue(this.name)}${func}`);           
+                console.log(this.clc.blue(this.name + func));           
             }
         }
         error(func) {
             if (this.enable) {
-                console.log(`${this.clc.red.bold(this.name)}${func}`);           
+                console.log(this.clc.red.bold(this.name + func));           
             }
         }
      

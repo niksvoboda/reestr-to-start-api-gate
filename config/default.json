@@ -10,5 +10,21 @@
     "password": "",
     "database": "arbitrage_parser",
     "port": 3306
+  },
+  "api_host": "https://10.10.1.100",
+  "api_check_ssl": false,
+  "api_user_auth": {
+    "login": "admin",    
+    "password": "W!8xp9ck8MT!9H9"  
+  },
+  "api_admin_auth": {
+    "login": "admin",    
+    "password": "W!8xp9ck8MT!9H9"  
+  },
+  "api_url": {
+    "login": "/v2/api/user/active/login",    
+    "project_search": "/v2/admin/project/search",
+    "database": "arbitrage_parser",
+    "port": 3306
   }
 }

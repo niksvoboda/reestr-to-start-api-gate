@@ -23,7 +23,7 @@ class Db extends Log {
     }
     
     getConnection(successCallback, failCallback) {        
-        this.d(".getConnection");
+        this.blue(".getConnection");
         this.pool.getConnection(function(err, connection) {
             if (err) {
                 failCallback(err);
@@ -45,13 +45,13 @@ class Db extends Log {
             multipleStatements: true,
             connectionLimit : 20
         };
-        this.d(".connect to " + db_host + ":" + db_port);
+        this.blue(".connect to " + db_host + ":" + db_port);
         this.pool = mysql.createPool(db_config);
         this.promisePool = this.pool.promise();        
     }
 
     query(sql, params = [], callback = null) {
-        this.d(".query sql: " + sql);
+        this.blue(".query sql: " + sql);
         this.getConnection((conn) => {
             conn.query(sql, params, (error, rows, fields) => {
                 conn.release();               
