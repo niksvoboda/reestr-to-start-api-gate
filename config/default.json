@@ -11,6 +11,7 @@
     "database": "arbitrage_parser",
     "port": 3306
   },
+  "api_sync_period": 10,
   "api_host": "https://10.10.1.100",
   "api_check_ssl": false,
   "api_user_auth": {

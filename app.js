@@ -3,7 +3,7 @@ const config        = require("config");
 const fs            = require("fs");
 const path          = require("path");
 const Log           = require("./components/log");
-const Sync_Scaner   = require('./components/sync_Scaner');
+const StartLogic    = require('./service/StartLogic');
 
 class App extends Log {
   name = "App"
@@ -13,7 +13,7 @@ class App extends Log {
       this.startSyncScaner();  
   }
   startSyncScaner(){
-    Sync_Scaner.autoSyncCharges()
+    StartLogic.autoSync()
   }
   showSplash() {
       const splash = [
