@@ -8,12 +8,13 @@
     "host": "127.0.0.1",
     "user": "root",
     "password": "",
-    "database": "arbitrage_parser",
+    "database": "start_to_reestr",
     "port": 3306
   },
   "api_sync_period": 10,
   "api_host": "https://10.10.1.100",
   "api_check_ssl": false,
+  "api_protectionKey": "rKCAEnD3KNkVTqpvr9YSvrQWn8xhEL9q",
   "api_user_auth": {
     "login": "admin",    
     "password": "W!8xp9ck8MT!9H9"  
@@ -25,7 +26,9 @@
   "api_url": {
     "login": "/v2/api/user/active/login",    
     "project_search": "/v2/admin/project/search",
-    "database": "arbitrage_parser",
-    "port": 3306
+    "project_add": "/v2/admin/gpb/projectApplication",
+    "application": "/v2/admin/application",
+    "template_search": "/v2/admin/application/template/search",
+    "application_search": "/v2/admin/application/search"
   }
 }

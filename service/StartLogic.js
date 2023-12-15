@@ -13,7 +13,11 @@ class StartLogic extends Log {
     name = "StartLogic";
     async createProject() {
       try {
-        
+        /** логинимся */
+        const token = await api_Start.getAuthToken();
+        console.log(token)
+        /** Получаем проекты из "Старта" */
+        const addProjects = await api_Start.addProjects(token);
       } catch (error) {
         console.log(error)
       }
@@ -47,13 +51,20 @@ class StartLogic extends Log {
         /** логинимся */
         const token = await api_Start.getAuthToken();
         console.log(token)
+        /** Получаем шаблоный из "Старта" */
+        const templates = await api_Start.getTemplates(token)
+        templates?.data && templates?.data.forEach(element => {
+          console.log(element)
+          console.log(JSON.stringify(element?.customInformation))
+        });
+
         /** Получаем проекты из "Старта" */
         const projects = await api_Start.getProjects(token);
-        
         projects?.data && projects?.data.forEach(element => {
           console.log(element)
-        //  console.log(JSON.stringify(element?.fieldsMap))
+          //console.log(JSON.stringify(element?.customInformation))
         });
+
         /** Получаем проекты из БД*/
 
         /** Проверяем соотвествие изменений проектов  */
