@@ -1,18 +1,10 @@
 [
   {
-    "name": "Полное название автоматизируемого бизнес-процесса с указанием его кода",
-    "propertyName": "null"
+    "name": "Наименование продукта/проекта",
+      "propertyName": "Naimenovanie",
   },
   {
-    "name": "c. Номер АС в Реестре АС",
-    "propertyName": "Uniq_id"
-  },
-  {
-    "name": "Основные функции и назначение",
-    "propertyName": "Naznachenie"
-  },
-  {
-    "name": "Полное название автоматизированной системы (АС)",
+    "name": "4.a. Полное название автоматизированной системы (АС)",
     "propertyName": "Naimenovanie"
   },
   {
@@ -24,35 +16,30 @@
     "propertyName": "Naznachenie"
   },
   {
-    "name": "Получение данных из автоматизированных систем",
-    "propertyName": "Sys_sourse"
+    "name": "c. Номер АС в Реестре АС",
+    "propertyName": "uniq_id"
   },
-  {
-    "name": "Получатели информации из АС",
-    "propertyName": "It_koordinator"
-  },
+
   {
     "name": "Категории обрабатываемой в АС информации",
     "propertyName": "Type_confidentiality"
   },
   {
-    "name": "Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
-    "propertyName": "Dopolnitelnye_uslovia"
-  },
-  {
-    "name": "Заказчик АС",
-    "strategy": "join",
-    "opts": {
-      "tableName": "v_reestr_as_manager",
-      "propertyName": "Fio"
-    }
-  },
-  {
-    "name": "Владелец АС ",
-    "strategy": "join",
-    "opts": {
-      "tableName": "V_REESTR_AS_OWNERS",
-      "propertyName": "Fio"
-    }
-  }
+    "name": "Принадлежность АС к контуру PCI DSS",
+    "propertyName": "standart_contur"
+  },    
+{
+"name": "Владелец АС",
+"strategy": "join",
+"opts": {
+ "tableName": "V_REESTR_AS_OWNERS",
+   "propertyName": "Boss_id"
+}},
+{
+"name": "Заказчик АС",
+"strategy": "join",
+"opts": {
+   "tableName": "v_reestr_as_manager",
+   "propertyName": "id_PERSONAL_2012"
+}}
 ]

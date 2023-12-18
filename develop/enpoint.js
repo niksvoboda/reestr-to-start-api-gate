@@ -38,3 +38,148 @@ let GPBAdditionalController = class GPBAdditionalController extends BaseControll
         }
     }
 };
+
+
+{
+    "fields": [
+       {
+          "values": [
+             {
+                "name": "name",
+                "type": "name",
+                "title": "Наименование продукта/проекта",
+                "description": "Данное поле должно содержать полное наименование Проекта/Продукта"
+             }
+          ]
+       },
+       {
+          "values": [
+             {
+                "name": "codeName",
+                "type": "codeName",
+                "title": "Идентификатор продукта/проекта",
+                "description": "Данное поле должно содержать уникальный идентификатор проекта/продукта в организации. В случае отсутствия кода указывается “Отсутствует“"
+             }
+          ]
+       },
+       {
+          "values": [
+             {
+                "name": "jiraLink",
+                "type": "jiraLink",
+                "title": "Ссылка на проект в Jira",
+                "description": "Ссылка на страницу проекта/продукта в Jira"
+             }
+          ]
+       },
+       {
+          "values": [
+             {
+                "name": "comment",
+                "type": "comment",
+                "title": "Комментарий",
+                "description": "Любая дополнительная информация по проекту"
+             }
+          ]
+       },
+       {
+          "values": [
+             {
+                "name": "rolesMap",
+                "type": "rolesMap",
+                "title": "Пользователи проекта",
+                "description": " "
+             }
+          ]
+       }
+    ]
+ }
+
+ {
+    "fields": [
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "1. Полные наименования автоматизируемых процессов с указанием их кодов",
+          "sortIndex": 1,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "2. Наименования этапов процессов с указанием их кодов",
+          "sortIndex": 2,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "4. a. Полное название автоматизированной системы (АС)",
+          "sortIndex": 3,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "b. Краткое название АС",
+          "sortIndex": 4,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "c. Номер АС в Реестре АС",
+          "sortIndex": 5,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "5. Назначение АС, перечень выполняемых ей функций",
+          "sortIndex": 6,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "6. Заказчик АС",
+          "sortIndex": 7,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "7. Владелец АС",
+          "sortIndex": 8,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "В АС планируется взаимодействие со следующими АС:",
+          "sortIndex": 9,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "a. Способ ввода информации в АС:",
+          "sortIndex": 10,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "b. Получатели информации из АС",
+          "sortIndex": 11,
+          "fieldDescription": ""
+       },
+       {
+          "type": "multiline",
+          "value": "",
+          "fieldName": "16. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
+          "sortIndex": 12,
+          "fieldDescription": ""
+       }
+    ]
+ }

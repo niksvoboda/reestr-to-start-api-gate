@@ -71,7 +71,7 @@ class api_Start extends Log {
             console.error(error)
         }
      }
-      /** Получение списка шаблонов */
+    /** Получение списка шаблонов */
     async getTemplates(token){
         try {      
             const endpoint  = config.get('api_url.template_search')
@@ -93,7 +93,7 @@ class api_Start extends Log {
                     }
                 }
             };
-        // Получаем проекты
+        // Получаем шаблоны
             let projects = null;
             await axios.post(url, data, req_config)
             .then(response => {
@@ -107,8 +107,59 @@ class api_Start extends Log {
             console.error(error)
         }
      }
+     /** Получение ID шаблона по его имени */
+    async getTemplateIDbyName(token, templateName){
+        try {      
+            const templates = await this.getTemplates(token)
+            /** Узнаем ID шаблона по его имени */
+            const searchTemplate = templates?.data.filter(p=>p.name == templateName)
+            const templateId = searchTemplate[0]//?.id      
+            console.log(JSON.stringify(templateId?.customInformation))      
+            return templateId
+        } catch (error) {
+            console.error(error)
+        }
+     }
+     async getProjectByID(token, templateID){
+        try {      
+            const endpoint  = config.get('api_url.application_search')
+            const url       = host + endpoint
+        // Заголовки
+            const req_config = {
+            headers: {
+            'Content-Type': 'application/json; charset=UTF-8',
+            'Authorization': `Bearer ${token}` // "Bearer ..."
+           }};
+        // Тело запроса
+
+            const data = {
+                "limit": 100000,
+                "filter": {
+                    "projectId": {
+                        "in": [
+                            "5382cc3a-cef9-4eca-9323-d4ed14cbd908"
+                        ]
+                    }
+                }
+            };
+
+        // Получаем шаблоны
+            let projects = null;
+            await axios.post(url, data, req_config)
+            .then(response => {
+                //console.log(response)
+                if (response.data) projects = response.data                   
+            }).catch(error => {
+                //console.error(error)
+            });            
+            return projects
+        } catch (error) {
+            console.error(error)
+        }
+     }
+     
      /** Создание проекта */
-     async addProjects(token, update){
+     async addProjects(token, _name, _comment, _customInformation){
         try {      
             const endpoint  = config.get('api_url.project_add')
             const protectionKey = config.get('api_protectionKey')
@@ -123,23 +174,30 @@ class api_Start extends Log {
         const data = {
             protectionKey: protectionKey,
             project: {
-              name: 'Система DiasoftBank 4*4', // название проекта
+              name: _name, // название проекта
               codeName: '', // Идентификатор продукта/проекта
               rolesMap: {
                 data: [],
               },
               jiraLink: '', // ссылка на проект в Jira
-              comment: '111Для примера по Реестру АС', // краткое описание
+              comment: _comment, // краткое описание
             },
             application: {
-              name: 'Система DiasoftBank 4*4', // название сиситемы, поумолчанию название проекта
-              specificationsIds: [], // id характеристик
-              performerTypeId: 'dc6542e0-5b50-46e2-9b77-9229e6802286', // id типа исполнителя, можно не указывать
-              customInformation: {"fields":[{"type":"multiline","value":"","fieldName":"1. Полные наименования автоматизируемых процессов с указанием их кодов","sortIndex":1,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"2. Наименования этапов процессов с указанием их кодов","sortIndex":2,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"4. a. Полное название автоматизированной системы (АС)","sortIndex":3,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"b. Краткое название АС","sortIndex":4,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"c. Номер АС в Реестре АС","sortIndex":5,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"5. Назначение АС, перечень выполняемых ей функций","sortIndex":6,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"6. Заказчик АС","sortIndex":7,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"7. Владелец АС","sortIndex":8,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"В АС планируется взаимодействие со следующими АС:","sortIndex":9,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"a. Способ ввода информации в АС:","sortIndex":10,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"b. Получатели информации из АС","sortIndex":11,"fieldDescription":""},{"type":"multiline","value":"","fieldName":"16. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС","sortIndex":12,"fieldDescription":""}]},
+              name: _name, // название сиситемы, поумолчанию название проекта
+              specificationsIds: [
+                "3a850d05-630f-41ae-b1ca-4b0a76a90199",
+                "1a3f65c7-096d-451f-bea9-fb540abedb71",
+                "5b3dc0f1-ac82-4c61-abc7-840211138734",
+                "7bd0f442-e2a0-4ea5-b8c1-27124ca201b0",
+                "f49ed135-f398-45c6-b379-e1da65960fd3",
+                "af795863-354b-4606-aaf1-5bca3c37d767",
+                "98365587-9af9-43e7-aa8f-64862cf31767"
+            ], // id характеристик
+              performerTypeId: '', // id типа исполнителя, можно не указывать
+              customInformation: _customInformation,
               templateId: 1, // id шаблона
             },
-          };
-           
+          };           
         // Создаем проект
             let projects = null;
             await axios.post(url, data, req_config)
