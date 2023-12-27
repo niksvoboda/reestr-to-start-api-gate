@@ -1,0 +1,25 @@
+{
+  "name": "reestr-to-start-api-gate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "import": "node utils/import.js",
+    "setup":  "node utils/setup.js",
+    "create": "nodemon tests/test_create.js",
+    "update": "nodemon tests/test_update.js"     
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cli-color": "^2.0.3",
+    "config": "^3.3.9",
+    "mysql2": "^3.2.0"
+  },  
+  "nodemonConfig": {
+    "ignore": ["storage"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

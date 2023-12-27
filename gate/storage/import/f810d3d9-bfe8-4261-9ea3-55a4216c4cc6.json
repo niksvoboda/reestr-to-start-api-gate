@@ -1,0 +1,106 @@
+{
+  "id": "2d91889b-d82b-4fd1-aef5-d1e1d1002c59",
+  "name": "Бухгалтерская система",
+  "specificationsIds": [
+    "5b3dc0f1-ac82-4c61-abc7-840211138734"
+  ],
+  "specificationsIdsSync": false,
+  "customInformation": [
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "1. Полные наименования автоматизируемых процессов с указанием их кодов",
+      "sortIndex": 1,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "2. Наименования этапов процессов с указанием их кодов",
+      "sortIndex": 2,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "Бухгалтерская система",
+      "fieldName": "4. a. Полное название автоматизированной системы (АС)",
+      "sortIndex": 3,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "БухPlus",
+      "fieldName": "b. Краткое название АС",
+      "sortIndex": 4,
+      "fieldDescription": "",
+      "sync": false
+    },
+    {
+      "type": "multiline",
+      "value": "9",
+      "fieldName": "c. Номер АС в Реестре АС",
+      "sortIndex": 5,
+      "fieldDescription": "",
+      "sync": false
+    },
+    {
+      "type": "multiline",
+      "value": "Финансовый учет",
+      "fieldName": "5. Назначение АС, перечень выполняемых ей функций",
+      "sortIndex": 6,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "6. Заказчик АС",
+      "sortIndex": 7,
+      "fieldDescription": "",
+      "sync": false
+    },
+    {
+      "type": "multiline",
+      "value": "Иванов Иван Иванович",
+      "fieldName": "7. Владелец АС",
+      "sortIndex": 8,
+      "fieldDescription": "",
+      "sync": false
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "В АС планируется взаимодействие со следующими АС:",
+      "sortIndex": 9,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "a. Способ ввода информации в АС:",
+      "sortIndex": 10,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "b. Получатели информации из АС",
+      "sortIndex": 11,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "16. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
+      "sortIndex": 12,
+      "fieldDescription": "",
+      "sync": true
+    }
+  ]
+}
