@@ -23,11 +23,11 @@ class StartLogic extends Log {
         /** Удаляем каждый проект по ID */
         if (startProjects?.data) {
           const projects = startProjects?.data.slice(START, END)  
-          console.log(projects)     
+         // console.log(projects)     
           for (const project of projects) { 
          // const result = await api_Start.getProject(token, project.id);    
          // console.log(result)      
-         // const res = await api_Start.deleteProject(token, project.id);  
+          const res = await api_Start.deleteProject(token, project.id);  
           }
         }
       } catch (error) {

@@ -5,6 +5,27 @@ const host      = config.get('api_host')
 
 class api_Start extends Log {     
     name = "api_Start";
+     /** Универсальный ендпойт для загрузки из апи */
+     async getPromEndPoint(endpoint, token, data){
+        try {      
+            const req_config = {
+            headers: {
+            'Content-Type': 'application/json; charset=UTF-8',
+            'Authorization': `Bearer ${token}` // "Bearer ..."
+           }};
+            let projects = null;
+            await axios.post(endpoint, data, req_config).then(response => {
+               // console.log(response.data)
+                if (response.data) projects = response.data                   
+            }).catch(error => {
+                //console.error(error)
+            });            
+            return projects
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
     /** Авторизация */
     async getAuthToken(){
         try {      
@@ -35,10 +56,45 @@ class api_Start extends Log {
                 console.error(error)
         }
     }
+     /** Получение списка проектов */
+     async getProjects(token){
+        try {      
+            const endpoint  = config.get('api_url.project_search')
+            const url       = host + endpoint
+        // Заголовки
+            const req_config = {
+            headers: {
+            'Content-Type': 'application/json; charset=UTF-8',
+            'Authorization': `Bearer ${token}` // "Bearer ..."
+           }};
+        // Тело запроса
+            const data = {
+                filter: {
+                    name: {
+                        like: {
+                            value: "",
+                            caseInsensitive: false
+                        }
+                    }
+                }
+            };
+        // Получаем проекты
+            let projects = null;
+            await axios.post(url, data, req_config).then(response => {
+                //console.log(response.data)
+                if (response.data) projects = response.data                   
+            }).catch(error => {
+                //console.error(error)
+            });            
+            return projects
+        } catch (error) {
+            console.error(error)
+        }
+    }
     /** Получение проекта */
     async getProject(token, projectID){
         try {      
-            console.log(token, projectID)
+            //console.log(token, projectID)
             const endpoint  = config.get('api_url.project_id')
             const url       = host + endpoint + '/' + projectID
         // Заголовки
@@ -93,42 +149,33 @@ class api_Start extends Log {
             console.error(error)
         }
      } 
-     /** Получение списка проектов */
-    async getProjects(token){
-        try {      
-            const endpoint  = config.get('api_url.project_search')
-            const url       = host + endpoint
+         
+    async fetchPage(token) {
+        try {
+        // Загрузка страницы
+        console.log(token)
+        const url = host
         // Заголовки
             const req_config = {
             headers: {
             'Content-Type': 'application/json; charset=UTF-8',
             'Authorization': `Bearer ${token}` // "Bearer ..."
-           }};
+        }};
         // Тело запроса
-            const data = {
-                filter: {
-                    name: {
-                        like: {
-                            value: "",
-                            caseInsensitive: false
-                        }
-                    }
-                }
-            };
-        // Получаем проекты
-            let projects = null;
-            await axios.post(url, data, req_config)
-            .then(response => {
-               // console.log(response.data)
-                if (response.data) projects = response.data                   
-            }).catch(error => {
-                //console.error(error)
-            });            
-            return projects
+            const data = {};   
+        await axios.get(url, data, req_config).then(response => {
+            console.log(response)
+           //console.log('проект удален')
+           //if (response.data) projects = response.data                   
+        }).catch(error => {
+            //console.error(error)
+        }); 
+    
         } catch (error) {
-            console.error(error)
+        console.error(`Произошла ошибка при попытке загрузить страницу: ${error.message}`);
         }
-     }
+    }
+    
 }
 
 module.exports =  new api_Start();

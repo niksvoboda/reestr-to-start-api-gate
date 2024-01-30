@@ -1,36 +1,28 @@
 {
   "version": "v1.0.0", 
+  "delay": 1000, 
+  "timeout": 3000, 
   "log":  {
     "console" : true
   },
   "home": "/",
-  "db": {
-    "host": "127.0.0.1",
-    "user": "root",
-    "password": "",
-    "database": "start_to_reestr",
-    "port": 3306
+  "sample":{
+    "start": 0,
+    "end":10002
   },
-  "db_reestr":{
-    "limit": 20,
-    "offset": 0
-  },
-  "api_sync_period": 15,
-  "api_check_sync_period": 5,
   "api_host": "https://10.10.1.100",
   "api_check_ssl": false,
-  "api_protectionKey": "rKCAEnD3KNkVTqpvr9YSvrQWn8xhEL9q",
   "api_user_auth": {
     "login": "admin",    
     "password": "W!8xp9ck8MT!9H9"  
   },
   "api_url": {
-    "login": "/v2/api/user/active/login",    
+    "login": "/v2/api/user/active/login",       
+    "project_search": "/v2/admin/project/search",  
+    "project_id": "/v2/api/project",
     "tag_search": "/v2/api/tag/search",
     "specification_ids_search": "/v2/admin/specification/search",    
-    "specification_ids_category_search": "/v2/admin/specification/category/search",     
-    "project_search": "/v2/admin/project/search",
-    "project_id": "/v2/api/project",    
+    "specification_ids_category_search": "/v2/admin/specification/category/search",    
     "project_add": "/v2/admin/gpb/projectApplication",
     "application": "/v2/admin/application",
     "template_search": "/v2/admin/application/template/search",

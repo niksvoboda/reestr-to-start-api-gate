@@ -6,7 +6,7 @@
   "home": "/",
   "sample":{
     "start": 0,
-    "end": 105
+    "end":10002
   },
   "api_host": "https://10.10.1.100",
   "api_check_ssl": false,
