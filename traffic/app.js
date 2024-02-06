@@ -1,5 +1,5 @@
 const StartLogic = require('./service/StartLogic');
-const config        = require("config");
+const config     = require("config");
 
 const start = async ()=>{
      const result = await StartLogic.getProjects();
