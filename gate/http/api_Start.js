@@ -185,7 +185,7 @@ class api_Start extends Log {
               specificationsIds:    data.specificationsIds? data.specificationsIds : [], // id характеристик для полей с выпадающими опциями
               performerTypeId:      data.performerTypeId?   data.performerTypeId : '', // id типа исполнителя, можно не указывать
               customInformation:    data.customInformation? data.customInformation : {fields: []},
-              templateId:           data.templateId?        data.templateId : 1, // id шаблона
+              templateId:           data.templateId?        data.templateId : '', // id шаблона
             },
           };           
           //console.log(_data)

@@ -7,12 +7,13 @@ const dbFile        = require("../components/db_File.js");
  * возвращаем объект для сохранения в бэкапфайл
  */
 const getImportData = (startProject) => {
+  // console.log(startProject)
     try {
        const data = startProject?.data[0];
-       const customInformation = data.customInformation ? data.customInformation : {
+       const customInformation = data?.customInformation ? data.customInformation : {
           fields: []
        }
-       const specificationsIds = data.specificationsIds ? data.specificationsIds : []
+       const specificationsIds = data?.specificationsIds ? data.specificationsIds : []
  
        const saveData = {
           id: data.id,

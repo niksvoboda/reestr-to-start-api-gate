@@ -5,14 +5,14 @@
   },
   "home": "/",
   "db": {
-    "host": "127.0.0.1",
+    "host": "host.docker.internal",
     "user": "root",
     "password": "",
     "database": "start_to_reestr",
     "port": 3306
   },
   "db_reestr":{
-    "limit": 20,
+    "limit": 1000,
     "offset": 0
   },
   "api_sync_period": 15,
