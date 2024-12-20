@@ -11,9 +11,7 @@ const {getImportData,
   getUpdateData, 
   getSpecificationsIdsFromStart,
   getManagers,
-  getOwners,
-  getUnsyncMapping,
-  getReSyncMapping
+  getOwners
 } = require("../utils/utils.js")
 
 /** Флаг указывающий что в данный момент идет синхронизация */
@@ -122,10 +120,12 @@ class StartLogic extends Log {
             } else {
               this.blue(`Проект ID: ${projectId} проверен`) 
             }
+            
           }        
       } catch (error) {
           console.log(error)
       }
+
      }
     /** Функция для  синхронизации всех проектов */
     async updateProjects() {
@@ -170,7 +170,8 @@ class StartLogic extends Log {
       } catch (error) {
         console.log(error)
       }
-    }    
+    }
+    
     /** Функция первоначального переноса всех проектов */
     async importProjects() {
       try {        
@@ -182,76 +183,51 @@ class StartLogic extends Log {
         const owners = await Reestr.getOwners();
         const managers = await Reestr.getManagers();
         const personal_2012 = await Reestr.getPersonal2012();
+
         /** логинимся */
         const token = await api_Start.getAuthToken();
-        //console.log(reestrProjects)        
-        /** Получаем проекты из "Старта" */
-        let s0_startProjects = await api_Start.getProjects(token);
-        s0_startProjects = s0_startProjects.data
-       // await dbFile.writeFile('s0_startProjects', s0_startProjects)  
-       // console.log(s0_startProjects)     
+        //console.log(reestrProjects)
         /** Получаем выпадающие поля шаблона с их текущими ID в данной конкретной системе */
         const dropDownFields = await this.getDropDownFields()
         /** Проходим по списку проектов из реестра и для каждого создаем проект в старте, в старте проекты создаются по имени */
         for (const reestrProject of reestrProjects) {
-            // Проверяем есть ли проект в базе реестра  и в старте одновременно, если да то сначала получаем проект из Старта чтобы 
-            // не затереть уже заполненные поля и дополняем только не заполнеными            
-            const reestrProjectName = reestrProject.Naimenovanie? reestrProject.Naimenovanie : ''
-            const check = s0_startProjects.filter(p=>p.name == reestrProjectName)
-           // console.log(check)
-            if (check?.length > 0) { // если проект есть
-              const project = check[0]
-              const projectId = project.id? project.id : ''
-              // Получаем кастомные поля проекта индивидуальным запросом, так как как они не отдаются общим запросом,
-              const projectData = await api_Start.getProjectByID(token, projectId);
-              // Делаем бэкап маппинга тех проектов которые есть c таким именем в реестре
-              const saveData = getImportData(projectData)
-              // Предварительно обрабатываем маппинг проекта так чтобы отключить синхронизацию у всех полей которые уже являются заполенными в старте  
-              const unsyncSaveData = getUnsyncMapping(saveData)
-              const fileName = path.join('import', projectId);        
-              await dbFile.writeFileJSON(fileName, unsyncSaveData, true)
-              // После сохранения маппинга сразу же проводим процедуру апдейта из реестра и таким образом заполним поля у которых синхронизация не отключена
-              const result = await this.updateProject(token, project, reestrProjects, dropDownFields, owners, managers, personal_2012)    
-              // так как стандартная процедура апдейта отключит синхронизацию, то нужно включить для полей полученых из реестра еще раз
-              const thisProjectMapping =  await dbFile.readFileJSON(fileName)
-             // console.log(thisProjectMapping, unsyncSaveData)
-              const reSyncSaveData = getReSyncMapping(thisProjectMapping, unsyncSaveData)
-              await dbFile.writeFileJSON(fileName, reSyncSaveData, true)
-              
-            } else { // если такого проекта нет то просто создаем новый
-              const name = reestrProject.Naimenovanie
-              const comment = ''
-              const _ownersStr = getOwners(reestrProject, owners, personal_2012)
-              const _managersStr = getManagers(reestrProject, managers, personal_2012)   
-              const customInformation = getFieldsMap(reestrProject, _managersStr, _ownersStr);    
-              const specificationsIds = getSpecificationsIdsFromStart(reestrProject, dropDownFields)
-              const data = {
-                name, 
-                comment, 
-                customInformation, 
-                specificationsIds
-              }
-              /** Создаем в старте проект  */
-              //console.log(data)
-              const result = await api_Start.addProject(token, data)
-              /** Узнаем его ID */
-              let s1_startProjects = await api_Start.getProjects(token);
-              s1_startProjects  = s1_startProjects.data
-              const _s1_startProjects = s1_startProjects.filter(p=>p.name == name)
+            const name = reestrProject.Naimenovanie
+            const comment = ''
+            const _ownersStr = getOwners(reestrProject, owners, personal_2012)
+            const _managersStr = getManagers(reestrProject, managers, personal_2012) 
 
-              if (_s1_startProjects.length>0) { // если проект сохранился то делаем его маппинг
-                const thisProjectInStart = _s1_startProjects[0]
-                const projectId = thisProjectInStart.id? thisProjectInStart.id : ''
-                // Получаем кастомные поля проекта индивидуальным запросом, так как как они не отдаются общим запросом,
-                const projectData = await api_Start.getProjectByID(token, projectId);
-                // Делаем бэкап маппинга тех проектов которые есть c таким именем в реестре
-                const saveData = getImportData(projectData)
-                const fileName = path.join('import', projectId);        
-                await dbFile.writeFileJSON(fileName, saveData, true)
-              } else {
-                console.log(`Проект с именем: ${name} не найден в АС "Старт"`)
-              }
+            const customInformation = getFieldsMap(reestrProject, _managersStr, _ownersStr);    
+            const specificationsIds = getSpecificationsIdsFromStart(reestrProject, dropDownFields)
+            const data = {
+              name, 
+              comment, 
+              customInformation, 
+              specificationsIds
             }
+          /** Создаем в старте проект  */
+          //console.log(data)
+          const result = await api_Start.addProject(token, data)
+        }
+
+        /** Получаем проекты из "Старта" */
+        const startProjects = await api_Start.getProjects(token);
+        //console.log(startProjects)        
+        if (startProjects?.data) {
+          const projects = startProjects?.data
+          for (const project of projects) {
+            const projectId = project.id? project.id : ''
+            const projectName = project.name? project.name : ''
+            // Проверяем есть ли проект в базе реестра  и в старте одновременно, если да то сохраняем маппинг проекта в файл для последующего чека
+            const check = reestrProjects.filter(p=>p.Naimenovanie == projectName)
+            if (check?.length > 0) {
+              //Получаем кастомные поля проекта индивидуальным запросом, так как как они не отдаются общим запросом,
+              const projectData = await api_Start.getProjectByID(token, projectId);
+              //Делаем бэкап маппинга тех проектов которые есть c таким именем в реестре
+              const saveData = getImportData(projectData)        
+              const fileName = path.join('import', projectId);        
+              await dbFile.writeFileJSON(fileName, saveData, true)
+            }
+          }
         }
         /** Сохраняем дату импорта от нее будет отталкиваться дата следующей синхронизации*/
         await dbFile.writeFile('lastSyncDate', String(new Date()))       

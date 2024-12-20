@@ -56,6 +56,7 @@ const getImportData = (startProject) => {
    }
  }
  const getOwners = (reestrProject, owners, personal_2012) => {
+   //console.log(reestrProject, owners, personal_2012)
    try {
       let result = []
       //console.log(reestrProject, owners, personal_2012)
@@ -63,8 +64,9 @@ const getImportData = (startProject) => {
       const ownersIDs = owners.filter(p=>p.reestr_as_id == reestrProject.uniq_id)
       for (const ownersID of ownersIDs) {
          // Для каждого ID овнера получаем ФИО из таблицы personal_2012
-         const personal_2012_fio = personal_2012.filter(p=>p.rowid == ownersID.boss_id)[0]
+       //   const personal_2012_fio = personal_2012.filter(p=>String(p.rowid).includes(ownersID.boss_id))[0]
         // console.log(personal_2012_fio)
+        const personal_2012_fio = personal_2012.filter(p=>String(p.rowid).slice(8) == ownersID.boss_id)[0]
          result.push(personal_2012_fio.fio)
       }
       //console.log(result)
@@ -263,11 +265,56 @@ const getUpdateData = async (startProjectFromByID, project, customInformationFro
        }
     }
  }
+
+ const getUnsyncMapping = (obj) =>{
+   // Проверяем, не пустой ли массив specificationsIds
+   if (obj.specificationsIds && obj.specificationsIds.length > 0) {
+      // Устанавливаем specificationsIdsSync в false
+      obj.specificationsIdsSync = false;
+   }   
+   // Итерация по массиву customInformation объекта
+   obj.customInformation.forEach((field) => {
+      // Проверка, не пустое ли значение value
+      if (field.value !== "") {
+      // Установка свойства sync в false
+      field.sync = false;
+      }
+   });
+   // Возврат измененного объекта
+   return  JSON.parse(JSON.stringify(obj));
+ }
+ const getReSyncMapping = (targetObj, sourceObj) =>{
+   // Синхронизация значения specificationsIdsSync
+   if ('specificationsIdsSync' in sourceObj) {
+      targetObj.specificationsIdsSync = sourceObj.specificationsIdsSync;
+   }
+   // Убеждаемся, что в обоих объектах есть массив customInformation
+   if (Array.isArray(targetObj.customInformation) && Array.isArray(sourceObj.customInformation)) {
+      // Итерируемся по массиву customInformation из targetObj
+      targetObj.customInformation.forEach((targetField, index) => {
+      // Если у соответствующего поля в sourceObj есть ключ sync,
+      // обновляем значение sync в targetObj
+      if (sourceObj.customInformation[index] && 'sync' in sourceObj.customInformation[index]) {
+         // Если это то поле которому мы восстанавливаем синхронизацию(то есть в старте оно было пустым и мы переносим его из реестра)
+         if (sourceObj.customInformation[index].sync == true) {
+            // То записываем в маппинг значение которое перенсли из реестра
+          //  console.log('sourceObj.customInformation[index].value', sourceObj.customInformation[index].value)
+            //targetField.value = sourceObj.customInformation[index].value;
+         }
+         targetField.sync = sourceObj.customInformation[index].sync;
+      }
+      });
+   }
+   // Возвращаем обновленный targetObj
+   return targetObj;
+ }
  
  module.exports = {
     getImportData,
     getUpdateData,
     getSpecificationsIdsFromStart,
     getManagers,
-    getOwners
+    getOwners,
+    getUnsyncMapping,
+    getReSyncMapping
  }

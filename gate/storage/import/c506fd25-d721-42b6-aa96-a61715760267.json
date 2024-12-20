@@ -1,0 +1,133 @@
+{
+  "id": "8dd52c6e-64df-483c-a141-fa1274232f8b",
+  "name": "HRM система2",
+  "specificationsIds": [
+    "98365587-9af9-43e7-aa8f-64862cf31767",
+    "1a3f65c7-096d-451f-bea9-fb540abedb71",
+    "5b3dc0f1-ac82-4c61-abc7-840211138734",
+    "7bd0f442-e2a0-4ea5-b8c1-27124ca201b0"
+  ],
+  "specificationsIdsSync": true,
+  "customInformation": [
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "1. Полные наименования автоматизируемых процессов с указанием их кодов",
+      "sortIndex": 1,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "2. Наименования этапов процессов с указанием их кодов",
+      "sortIndex": 2,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "HRM система2",
+      "fieldName": "4. a. Полное название автоматизированной системы (АС)",
+      "sortIndex": 3,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "HRManager",
+      "fieldName": "b. Краткое название АС",
+      "sortIndex": 4,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "3",
+      "fieldName": "c. Номер АС в Реестре АС",
+      "sortIndex": 5,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "Управление человеческими ресурсами",
+      "fieldName": "5. Назначение АС, перечень выполняемых ей функций",
+      "sortIndex": 6,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "6. Заказчик АС",
+      "sortIndex": 7,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "7. Владелец АС",
+      "sortIndex": 8,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "В АС планируется взаимодействие со следующими АС",
+      "sortIndex": 9,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "Получение данных из автоматизированных систем",
+      "sortIndex": 10,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "Получатели информации из АС",
+      "sortIndex": 11,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "11. Предполагаемое количество пользователей АС",
+      "sortIndex": 12,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "Предполагаемое количество групп/ролей в АС",
+      "sortIndex": 13,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "21. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
+      "sortIndex": 14,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "",
+      "fieldName": "Руководитель ССП ИТ-блока, выполняющего работы по созданию (модернизации) АС",
+      "sortIndex": 15,
+      "fieldDescription": "",
+      "sync": true
+    }
+  ]
+}

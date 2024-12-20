@@ -187,8 +187,10 @@ class api_Start extends Log {
               customInformation:    data.customInformation? data.customInformation : {fields: []},
               templateId:           data.templateId?        data.templateId : '', // id шаблона
             },
-          };           
-          //console.log(_data)
+          };  
+          
+          
+        //  console.log(JSON.stringify(_data))
         // Создаем проект
             let projects = null;
             await axios.post(url, _data, req_config)

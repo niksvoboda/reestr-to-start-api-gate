@@ -8,15 +8,12 @@ const getFieldsMap = (reestrProject, _managersStr, _ownersStr) =>{
       field_4 : reestrProject.Kratkoe_nazvanie_prilozhenie_spisok_sinonimov,
       field_5 : reestrProject.uniq_id,
       field_6 : reestrProject.Naznachenie,
-      field_7 : '', //_managersStr
+      field_7 : _managersStr,
       field_8 : _ownersStr,
       field_9 : '',
       field_10 : '',
       field_11 : '',
       field_12 : '',
-      field_13 : '',
-      field_14 : '',
-      field_15 : '',
     }
    const fieldsMap = {
       "fields": [
@@ -41,7 +38,7 @@ const getFieldsMap = (reestrProject, _managersStr, _ownersStr) =>{
             "sortIndex": 3,
             "fieldDescription": ""
          },
-         {
+         {  
             "type": "multiline",
             "value": `${update.field_4}`,
             "fieldName": "b. Краткое название АС",
@@ -55,14 +52,14 @@ const getFieldsMap = (reestrProject, _managersStr, _ownersStr) =>{
             "sortIndex": 5,
             "fieldDescription": ""
          },
-         {
+         {  
             "type": "multiline",
             "value": `${update.field_6}`,
-            "fieldName": "5. Назначение АС, перечень выполняемых ей функций",
+            "fieldName": "5. Назначение АС, перечень выполняемых ей функций",                    
             "sortIndex": 6,
             "fieldDescription": ""
          },
-         {
+         {  
             "type": "multiline",
             "value": `${update.field_7}`,
             "fieldName": "6. Заказчик АС",
@@ -76,7 +73,7 @@ const getFieldsMap = (reestrProject, _managersStr, _ownersStr) =>{
             "sortIndex": 8,
             "fieldDescription": ""
          },
-         {
+         {  
             "type": "multiline",
             "value": `${update.field_9}`,
             "fieldName": "В АС планируется взаимодействие со следующими АС",
@@ -86,48 +83,26 @@ const getFieldsMap = (reestrProject, _managersStr, _ownersStr) =>{
          {
             "type": "multiline",
             "value": `${update.field_10}`,
-            "fieldName": "Получение данных из автоматизированных систем",
+            "fieldName": "a. Способ ввода информации в АС",
             "sortIndex": 10,
             "fieldDescription": ""
          },
-         {
+         {  
             "type": "multiline",
             "value": `${update.field_11}`,
-            "fieldName": "Получатели информации из АС",
+            "fieldName": "b. Получатели информации из АС",
             "sortIndex": 11,
             "fieldDescription": ""
          },
-         {
+         {  
             "type": "multiline",
             "value": `${update.field_12}`,
-            "fieldName": "11. Предполагаемое количество пользователей АС",
+            "fieldName": "16. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
             "sortIndex": 12,
-            "fieldDescription": ""
-         },
-         {
-            "type": "multiline",
-            "value": `${update.field_13}`,
-            "fieldName": "Предполагаемое количество групп/ролей в АС",
-            "sortIndex": 13,
-            "fieldDescription": ""
-         },
-         {
-            "type": "multiline",
-            "value": `${update.field_14}`,
-            "fieldName": "21. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
-            "sortIndex": 14,
-            "fieldDescription": ""
-         },
-         {
-            "type": "multiline",
-            "value": `${update.field_15}`,
-            "fieldName": "Руководитель ССП ИТ-блока, выполняющего работы по созданию (модернизации) АС",
-            "sortIndex": 15,
             "fieldDescription": ""
          }
       ]
    }
-   
    return fieldsMap
 }
 /**
