@@ -15,7 +15,7 @@ class Reestr extends Log {
         FROM 
         v_reestr_as_asup
         WHERE 
-        (sys_source != 'gpbuadmin' OR sys_source IS NULL)
+        (Sys_sourse != 'gpbuadmin' OR Sys_sourse IS NULL)
         LIMIT ? OFFSET ?`
         const result = await db.asyncQuery(query, [LIMIT, OFFSET], true)
         console.log(query)
