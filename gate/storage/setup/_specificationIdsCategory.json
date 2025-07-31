@@ -1,1 +1,1731 @@
-null
+{
+  "totalCount": 57,
+  "data": [
+    {
+      "id": "6af9ded8-2205-46b2-8218-edb5adaa2729",
+      "rootId": "6af9ded8-2205-46b2-8218-edb5adaa2729",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:45:17.069Z",
+      "auditUserId": null,
+      "privateId": 68,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:41:41.191Z",
+      "lastUpdateDate": "2025-07-29T12:45:17.071Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "5d0300d5-0a54-45a8-a439-409ba4ee0b3b",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "1. Полные наименования автоматизируемых процессов с указанием их кодов",
+      "description": " наименования автоматизируемых процессов",
+      "orderIndex": 10,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "e0661c70-b8b1-4067-a2c9-bae3cf25dc42",
+      "rootId": "e0661c70-b8b1-4067-a2c9-bae3cf25dc42",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:45:22.830Z",
+      "auditUserId": null,
+      "privateId": 70,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:42:00.349Z",
+      "lastUpdateDate": "2025-07-29T12:45:22.832Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "d8824d8a-2fc6-4466-b451-6216e80d655f",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "2. Наименования этапов процессов с указанием их кодов",
+      "description": "Наименования этапов",
+      "orderIndex": 20,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "d1101a44-8fc7-4cd9-a6fc-ba968275c97b",
+      "rootId": "d1101a44-8fc7-4cd9-a6fc-ba968275c97b",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:19:49.964Z",
+      "auditUserId": null,
+      "privateId": 72,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:45:48.903Z",
+      "lastUpdateDate": "2025-07-29T14:19:49.966Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "bf49f6ac-4a22-4904-bec4-552fd92b7bbb",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "3. (A). Тип автоматизируемого банковского технологического процесса (ТП)",
+      "description": "Тип автоматизируемого банковского технологического процесса",
+      "orderIndex": 30,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "f712a3c7-6a00-45d9-b099-5ef4a8659663",
+      "rootId": "f712a3c7-6a00-45d9-b099-5ef4a8659663",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:18:27.124Z",
+      "auditUserId": null,
+      "privateId": 74,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:48:57.789Z",
+      "lastUpdateDate": "2025-07-29T14:18:27.126Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "f8b7c5f5-7faf-4019-ae8c-168f5ebb16e0",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "4. a. Полное название автоматизированной системы (АС)",
+      "description": "Полное название автоматизированной системы",
+      "orderIndex": 41,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "689cd254-b39d-4010-b562-e68fd9785ac5",
+      "rootId": "689cd254-b39d-4010-b562-e68fd9785ac5",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:49:18.128Z",
+      "auditUserId": null,
+      "privateId": 76,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:49:18.130Z",
+      "lastUpdateDate": "2025-07-29T12:49:18.135Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "26357047-b5f6-43b3-9e1e-567f7ace91cf",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "b. Краткое название АС",
+      "description": " Краткое название АС",
+      "orderIndex": 42,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "449883a7-be64-4d0f-bb2b-d349a131dd99",
+      "rootId": "449883a7-be64-4d0f-bb2b-d349a131dd99",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:49:35.280Z",
+      "auditUserId": null,
+      "privateId": 78,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:49:35.283Z",
+      "lastUpdateDate": "2025-07-29T12:49:35.287Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "39609f4b-bba2-483d-8ca6-c2079c56bda4",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "c. Номер АС в Реестре АС",
+      "description": "Номер АС в Реестре АС",
+      "orderIndex": 43,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "a228f2e3-8e40-4e89-b716-039afdf13b2c",
+      "rootId": "a228f2e3-8e40-4e89-b716-039afdf13b2c",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:49:56.641Z",
+      "auditUserId": null,
+      "privateId": 80,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:49:56.644Z",
+      "lastUpdateDate": "2025-07-29T12:49:56.649Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "35711126-4f4a-45cc-8cf8-b8f0117ed4b0",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "5. Назначение АС, перечень выполняемых ею функций",
+      "description": "Назначение АС",
+      "orderIndex": 51,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "7b360389-f22c-4d81-9027-0e69f75c7ebc",
+      "rootId": "7b360389-f22c-4d81-9027-0e69f75c7ebc",
+      "isAudit": false,
+      "auditDate": "2025-07-29T13:56:29.144Z",
+      "auditUserId": null,
+      "privateId": 82,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:50:26.209Z",
+      "lastUpdateDate": "2025-07-29T13:56:29.146Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "bb343f33-d8fb-4c5a-9710-b76f7fe454a3",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Если какие-либо функции АС касаются работы с банковскими картами, то явно указать к какой области это относится",
+      "description": "банковскими картами",
+      "orderIndex": 52,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "b387aae2-b947-487c-beef-fa3d42032c36",
+      "rootId": "b387aae2-b947-487c-beef-fa3d42032c36",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:52:11.376Z",
+      "auditUserId": null,
+      "privateId": 84,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:52:11.379Z",
+      "lastUpdateDate": "2025-07-29T12:52:11.384Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "cef73dee-37ce-4326-9798-fe759bd66d40",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "6. Заказчик АС",
+      "description": "Заказчик",
+      "orderIndex": 60,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "7e0cb258-3cce-47ae-9295-5ca65fd4a0db",
+      "rootId": "7e0cb258-3cce-47ae-9295-5ca65fd4a0db",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:52:27.281Z",
+      "auditUserId": null,
+      "privateId": 86,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:52:27.283Z",
+      "lastUpdateDate": "2025-07-29T12:52:27.289Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "663b15f7-3617-45cf-aae1-9293daa888ae",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "7. Владелец АС",
+      "description": "Владелец",
+      "orderIndex": 70,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "995ab589-77e1-402b-a94e-27963e0b5e6f",
+      "rootId": "995ab589-77e1-402b-a94e-27963e0b5e6f",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:52:58.146Z",
+      "auditUserId": null,
+      "privateId": 45,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:14:23.744Z",
+      "lastUpdateDate": "2025-07-29T12:52:58.148Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "94d66113-9fe5-4490-b823-3c67aa99adef",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "8. (B). Категории обрабатываемой в АС информации",
+      "description": "Категории обрабатываемой в АС информации",
+      "orderIndex": 81,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "d9ab8017-917f-46a8-b361-ddb2e1fae186",
+      "rootId": "d9ab8017-917f-46a8-b361-ddb2e1fae186",
+      "isAudit": false,
+      "auditDate": "2025-07-29T15:45:22.894Z",
+      "auditUserId": null,
+      "privateId": 88,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:54:16.941Z",
+      "lastUpdateDate": "2025-07-29T15:45:22.898Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "940614a6-ddaf-4787-8a79-d13aa01fb3ab",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "(B3) Информация категории «Банковская тайна» (БТ) (платежная информация), в том числе",
+      "description": "БТ",
+      "orderIndex": 82,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "96bc5b89-95e3-4459-90dc-676d10c8db5b"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "7463ec9b-c185-497e-93a7-a3d8b5d7c508",
+      "rootId": "7463ec9b-c185-497e-93a7-a3d8b5d7c508",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:31:25.845Z",
+      "auditUserId": null,
+      "privateId": 90,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:55:09.239Z",
+      "lastUpdateDate": "2025-07-29T14:31:25.846Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "52c60546-f0ea-4d30-825c-edd10bd3615d",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "(PCD) БТ.1.7. Информация, нанесенная на банковские карты",
+      "description": "PCD",
+      "orderIndex": 83,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "0e41b93e-ff4c-46a4-9f21-b17bfceef4e5"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "6d2f8417-fc8b-4d6e-90d0-2037a50d2bda",
+      "rootId": "6d2f8417-fc8b-4d6e-90d0-2037a50d2bda",
+      "isAudit": false,
+      "auditDate": "2025-07-29T13:27:37.808Z",
+      "auditUserId": null,
+      "privateId": 92,
+      "isDeleted": false,
+      "createDate": "2025-07-29T13:27:37.810Z",
+      "lastUpdateDate": "2025-07-29T13:27:37.816Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "9aedd2bd-d5e7-49b4-bc60-ab44b7e9f8b6",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Категория ПДн",
+      "description": "Категория ПДн",
+      "orderIndex": 85,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "efe6d2ce-9ac8-4e97-9efb-dba9f62deac7"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "cb73fcfd-7d83-46b4-a072-706bc4d0f077",
+      "rootId": "cb73fcfd-7d83-46b4-a072-706bc4d0f077",
+      "isAudit": false,
+      "auditDate": "2025-07-29T13:27:54.221Z",
+      "auditUserId": null,
+      "privateId": 94,
+      "isDeleted": false,
+      "createDate": "2025-07-29T13:27:54.225Z",
+      "lastUpdateDate": "2025-07-29T13:27:54.229Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "e59b0b5b-744d-436d-9c2f-426fc14cf065",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Категория субъектов ПДн",
+      "description": "Категория субъектов ПДн",
+      "orderIndex": 85,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "efe6d2ce-9ac8-4e97-9efb-dba9f62deac7"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "f991be3c-f702-4a0d-b0a3-a3ceb5c5b400",
+      "rootId": "f991be3c-f702-4a0d-b0a3-a3ceb5c5b400",
+      "isAudit": false,
+      "auditDate": "2025-07-29T13:28:07.692Z",
+      "auditUserId": null,
+      "privateId": 96,
+      "isDeleted": false,
+      "createDate": "2025-07-29T13:28:07.694Z",
+      "lastUpdateDate": "2025-07-29T13:28:07.699Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "58c8baca-b8a5-4d67-baa2-cfe4ac67708c",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Количество субъектов",
+      "description": "Количество субъектов",
+      "orderIndex": 85,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "efe6d2ce-9ac8-4e97-9efb-dba9f62deac7"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "2292969d-d50d-4226-9652-02088d51733b",
+      "rootId": "2292969d-d50d-4226-9652-02088d51733b",
+      "isAudit": false,
+      "auditDate": "2025-07-29T13:28:19.773Z",
+      "auditUserId": null,
+      "privateId": 98,
+      "isDeleted": false,
+      "createDate": "2025-07-29T13:28:19.775Z",
+      "lastUpdateDate": "2025-07-29T13:28:19.780Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "e4a128c7-345c-4a40-b87d-1cbdc33cbaf5",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Тип актуальных угроз",
+      "description": "Тип актуальных угроз",
+      "orderIndex": 85,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "efe6d2ce-9ac8-4e97-9efb-dba9f62deac7"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "de2b72b2-2071-4c55-adc9-6de46142a28d",
+      "rootId": "de2b72b2-2071-4c55-adc9-6de46142a28d",
+      "isAudit": false,
+      "auditDate": "2025-07-29T13:28:33.494Z",
+      "auditUserId": null,
+      "privateId": 100,
+      "isDeleted": false,
+      "createDate": "2025-07-29T13:28:33.496Z",
+      "lastUpdateDate": "2025-07-29T13:28:33.500Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "3a1bfa43-d1e4-4b36-a706-e42dae88cf82",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Уровень защищенности ПДн",
+      "description": "Уровень защищенности ПДн",
+      "orderIndex": 85,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "efe6d2ce-9ac8-4e97-9efb-dba9f62deac7"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "cd2727b4-8dfd-4632-922a-dde8898f39a9",
+      "rootId": "cd2727b4-8dfd-4632-922a-dde8898f39a9",
+      "isAudit": false,
+      "auditDate": "2025-07-29T13:59:03.467Z",
+      "auditUserId": null,
+      "privateId": 104,
+      "isDeleted": false,
+      "createDate": "2025-07-29T13:59:03.469Z",
+      "lastUpdateDate": "2025-07-29T13:59:03.474Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "305d26ff-9abb-472a-8606-2613dd27e44a",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "В АС планируется взаимодействие со следующими АС",
+      "description": "В АС планируется взаимодействие со следующими АС",
+      "orderIndex": 92,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "cb7d87a8-9200-4f98-8a21-4519e85116f0",
+      "rootId": "cb7d87a8-9200-4f98-8a21-4519e85116f0",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:00:15.886Z",
+      "auditUserId": null,
+      "privateId": 106,
+      "isDeleted": false,
+      "createDate": "2025-07-29T13:59:16.290Z",
+      "lastUpdateDate": "2025-07-29T14:00:15.888Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "e2f5fd63-75d4-4fb5-91fc-aefa20a38000",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Получение данных из АС",
+      "description": "Получение данных из АС:",
+      "orderIndex": 93,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "cffa6708-7259-4363-a07f-2666c7616c21",
+      "rootId": "cffa6708-7259-4363-a07f-2666c7616c21",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:01:41.935Z",
+      "auditUserId": null,
+      "privateId": 110,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:01:28.415Z",
+      "lastUpdateDate": "2025-07-29T14:01:41.937Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "2f292e34-0bff-4f13-a408-c7ee1a8b98c7",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Получатели информации из АС",
+      "description": "Получатели информации из АС",
+      "orderIndex": 94,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "0b45758a-b329-4bc6-9bc8-0f190f6adef4",
+      "rootId": "0b45758a-b329-4bc6-9bc8-0f190f6adef4",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:05:29.590Z",
+      "auditUserId": null,
+      "privateId": 112,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:05:29.592Z",
+      "lastUpdateDate": "2025-07-29T14:05:29.598Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "699da3d6-d7dc-4419-b6f4-aa36bea926b1",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "10. (E). Требуемые каналы доступа к АС",
+      "description": "Требуемые каналы доступа к АС",
+      "orderIndex": 101,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "46c63435-4a8f-4858-8936-a65bbb8eea83",
+      "rootId": "46c63435-4a8f-4858-8936-a65bbb8eea83",
+      "isAudit": false,
+      "auditDate": "2025-07-29T15:50:28.674Z",
+      "auditUserId": null,
+      "privateId": 114,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:06:45.797Z",
+      "lastUpdateDate": "2025-07-29T15:50:28.676Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "3bba11e5-f72c-4df6-a364-c54edea2e718",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "(EA) Из внутренней сети Банка",
+      "description": "(EA) Из внутренней сети Банка",
+      "orderIndex": 102,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "beb81f62-a3fd-45a2-8ce8-41f28a935c56"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "9ee1825d-bb70-4693-a294-4c5c95acbca5",
+      "rootId": "9ee1825d-bb70-4693-a294-4c5c95acbca5",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:07:05.752Z",
+      "auditUserId": null,
+      "privateId": 116,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:07:05.754Z",
+      "lastUpdateDate": "2025-07-29T14:07:05.760Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "c7d3803f-1ed7-4d51-8874-894b2c4eceec",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "(EC) Через Мобильный офис/АС ПКМ",
+      "description": "(EC) Через Мобильный офис/АС ПКМ",
+      "orderIndex": 103,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "37e94b65-a0f4-497f-ba15-7f5439ecb88a"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "ba51fd76-a4eb-4d04-b21e-dade90f6528e",
+      "rootId": "ba51fd76-a4eb-4d04-b21e-dade90f6528e",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:10:00.910Z",
+      "auditUserId": null,
+      "privateId": 118,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:10:00.913Z",
+      "lastUpdateDate": "2025-07-29T14:10:00.917Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "ff4f5c5e-1a9d-4c11-a912-394d14f78ba7",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "(ED) Через общедоступные сети (Интернет)",
+      "description": "(ED) Через общедоступные сети (Интернет)",
+      "orderIndex": 104,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "03f5514f-c98d-4a62-a568-84ac4702d4a3"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "66645b8b-e65d-47c1-8e93-7d5f27d9f7b0",
+      "rootId": "66645b8b-e65d-47c1-8e93-7d5f27d9f7b0",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:10:59.485Z",
+      "auditUserId": null,
+      "privateId": 120,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:10:59.487Z",
+      "lastUpdateDate": "2025-07-29T14:10:59.491Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "951d5ef2-4e64-4cc9-99ba-0c0adbb8b120",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "11. Предполагаемое количество пользователей АС",
+      "description": "Предполагаемое количество пользователей АС",
+      "orderIndex": 111,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "b84f9cdb-861d-40b0-ac65-a8056f0987f8",
+      "rootId": "b84f9cdb-861d-40b0-ac65-a8056f0987f8",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:11:14.343Z",
+      "auditUserId": null,
+      "privateId": 122,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:11:14.345Z",
+      "lastUpdateDate": "2025-07-29T14:11:14.351Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "3981470d-d5d0-4159-843c-6fbc4196898a",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Предполагаемое количество групп/ролей в АС",
+      "description": "Предполагаемое количество групп/ролей в АС",
+      "orderIndex": 112,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "a1769963-c5fd-473e-95f3-263743f6e383",
+      "rootId": "a1769963-c5fd-473e-95f3-263743f6e383",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:11:36.441Z",
+      "auditUserId": null,
+      "privateId": 124,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:11:36.443Z",
+      "lastUpdateDate": "2025-07-29T14:11:36.448Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "f6446fad-b0ef-4de4-9bd3-c55a24feb6c0",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "12. (F). Автоматизация предоставления доступа к АС",
+      "description": "Автоматизация предоставления доступа к АС",
+      "orderIndex": 120,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "3f9a29e4-e84f-4c61-8b94-a90ff48da8a1",
+      "rootId": "3f9a29e4-e84f-4c61-8b94-a90ff48da8a1",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:17:34.283Z",
+      "auditUserId": null,
+      "privateId": 126,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:13:17.393Z",
+      "lastUpdateDate": "2025-07-29T14:17:34.285Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "97b2eabf-84dd-4d35-adea-4e5f8b8deb36",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "13. (H). Планируется ли применение сертифицированных ФСБ России средств криптографической защиты информации (СКЗИ)?",
+      "description": "Планируется ли применение сертифицированных ФСБ России средств криптографической защиты информации (СКЗИ)",
+      "orderIndex": 130,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "aca71b93-e36f-4fa5-950f-43fa69c2ee00",
+      "rootId": "aca71b93-e36f-4fa5-950f-43fa69c2ee00",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:14:26.186Z",
+      "auditUserId": null,
+      "privateId": 128,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:14:26.189Z",
+      "lastUpdateDate": "2025-07-29T14:14:26.194Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "e7a37f71-eca2-4653-a7ce-27073577b0a7",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "14. (I). Способ создания продукта",
+      "description": "Способ создания продукта",
+      "orderIndex": 141,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "751ac3bc-69ed-4225-b904-cc9d7166b568",
+      "rootId": "751ac3bc-69ed-4225-b904-cc9d7166b568",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:15:48.683Z",
+      "auditUserId": null,
+      "privateId": 130,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:15:48.686Z",
+      "lastUpdateDate": "2025-07-29T14:15:48.691Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "a139234a-98be-4889-8a49-d43cd9286082",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Тип автоматизируемого процесса",
+      "description": "Тип автоматизируемого процесса",
+      "orderIndex": 142,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "f731fe6e-38a4-46a8-9d8c-3fd097f20c87",
+          "64005310-b167-4458-9395-c3c305fc6b2d"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "346625cb-85c9-4104-a956-86a45ec5e3ec",
+      "rootId": "346625cb-85c9-4104-a956-86a45ec5e3ec",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:21:07.815Z",
+      "auditUserId": null,
+      "privateId": 132,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:21:07.817Z",
+      "lastUpdateDate": "2025-07-29T14:21:07.825Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "51226f08-9562-4efd-b84c-a5da59c3958e",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "15. В составе АС используется мобильное приложение, разработанное по заказу Банка или самостоятельно подразделениями Банка",
+      "description": "В составе АС используется мобильное приложение, разработанное по заказу Банка или самостоятельно подразделениями Банка",
+      "orderIndex": 150,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "2f883d8a-8bd0-4d70-920b-1b5e82d76f1d",
+      "rootId": "2f883d8a-8bd0-4d70-920b-1b5e82d76f1d",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:22:05.610Z",
+      "auditUserId": null,
+      "privateId": 134,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:22:05.612Z",
+      "lastUpdateDate": "2025-07-29T14:22:05.617Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "6ff2795c-303a-4434-af25-f49cd3aca1a1",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "16. В АС планируется использование средств контейнерной виртуализации",
+      "description": "В АС планируется использование средств контейнерной виртуализации",
+      "orderIndex": 160,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "069f805c-090d-4eed-9f9a-33e5a9efd56d",
+      "rootId": "069f805c-090d-4eed-9f9a-33e5a9efd56d",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:26:04.057Z",
+      "auditUserId": null,
+      "privateId": 136,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:22:58.195Z",
+      "lastUpdateDate": "2025-07-29T14:26:04.059Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "174f7713-63c2-4be6-b10f-ce83deced011",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "17. (L). В АС планируется генерация и/или использование одноразовых кодов (СМС, Push, …)",
+      "description": "В АС планируется генерация и/или использование одноразовых кодов (СМС, Push, …)",
+      "orderIndex": 170,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "368c7ec5-0e33-435b-8b78-db161625b21c",
+      "rootId": "368c7ec5-0e33-435b-8b78-db161625b21c",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:23:46.544Z",
+      "auditUserId": null,
+      "privateId": 138,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:23:46.547Z",
+      "lastUpdateDate": "2025-07-29T14:23:46.553Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "73a155cb-0c92-49f9-98a0-456fc5f66063",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "18. Архитектура АС (возможные виды клиентов)",
+      "description": "Архитектура АС",
+      "orderIndex": 180,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "ca08573c-1b29-4e96-bb3e-f94e3bf38d8a",
+      "rootId": "ca08573c-1b29-4e96-bb3e-f94e3bf38d8a",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:24:38.386Z",
+      "auditUserId": null,
+      "privateId": 140,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:24:38.388Z",
+      "lastUpdateDate": "2025-07-29T14:24:38.395Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "40425e4c-9796-4391-aa83-dc9e34f07e12",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "19. В АС планируется обработка ПДн граждан Евросоюза",
+      "description": "В АС планируется обработка ПДн граждан Евросоюза",
+      "orderIndex": 190,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "47ca2499-e674-4fd0-9404-a7b762ee8430",
+      "rootId": "47ca2499-e674-4fd0-9404-a7b762ee8430",
+      "isAudit": false,
+      "auditDate": "2025-07-29T14:25:24.012Z",
+      "auditUserId": null,
+      "privateId": 142,
+      "isDeleted": false,
+      "createDate": "2025-07-29T14:25:24.015Z",
+      "lastUpdateDate": "2025-07-29T14:25:24.022Z",
+      "lastDeleteDate": null,
+      "isActive": true,
+      "isBundled": false,
+      "globalId": "8f79f425-8b7c-4c41-9d85-988838e87183",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "20. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
+      "description": "Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
+      "orderIndex": 200,
+      "categoryType": "specificationCategoryText",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "cd179417-4062-4575-b4e2-1a9b60763684",
+      "rootId": "cd179417-4062-4575-b4e2-1a9b60763684",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:43:40.936Z",
+      "auditUserId": null,
+      "privateId": 47,
+      "isDeleted": false,
+      "createDate": "2025-07-29T12:14:38.226Z",
+      "lastUpdateDate": "2025-07-29T12:43:40.937Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "cbd79f0e-f796-41d2-804e-c50c3fdb9d98",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Принадлежность АС к контуру PCI DSS",
+      "description": "Принадлежность АС к контуру PCI DSS",
+      "orderIndex": 999,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [
+          "4bdf1fe5-5eb6-4a31-98d8-06b47c2d6ea0"
+        ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      }
+    },
+    {
+      "id": "b659a5d5-399b-4ee7-9f0b-4cb2bfa13575",
+      "rootId": "55fbf4d9-6b1e-44ac-a011-71d6b3eae085",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:42:51.943Z",
+      "auditUserId": null,
+      "privateId": 19,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.017Z",
+      "lastUpdateDate": "2025-07-29T12:42:51.945Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "700d4066-3546-4ccf-8e3c-148f32a3db3a",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Архитектура",
+      "description": "  ",
+      "orderIndex": 1000,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "6133ab6a-9f44-4214-b5b2-9b553b0409c0",
+      "rootId": "8782b423-1d6d-4cba-a9d3-0a1aeaca50d1",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:42:59.614Z",
+      "auditUserId": null,
+      "privateId": 21,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.044Z",
+      "lastUpdateDate": "2025-07-29T12:42:59.616Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "d605fa2b-fe2b-40ea-88c5-00fcd4fa9e05",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Аудит",
+      "description": "   ",
+      "orderIndex": 1001,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "ac20afcd-1350-4f64-b361-ad64c6371c9a",
+      "rootId": "945dfbd6-d29f-4bff-95bd-35b728c4e75b",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:43:06.457Z",
+      "auditUserId": null,
+      "privateId": 23,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.069Z",
+      "lastUpdateDate": "2025-07-29T12:43:06.459Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "84d1546a-a8e8-4a48-8135-5ca5e7e0bc50",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Безопасность 1С",
+      "description": "   ",
+      "orderIndex": 1002,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "02eed842-85af-4a00-b1d3-5a4874da7779",
+      "rootId": "840c15b5-fb1e-43c6-a284-d157aee4b0c7",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:43:12.583Z",
+      "auditUserId": null,
+      "privateId": 25,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.098Z",
+      "lastUpdateDate": "2025-07-29T12:43:12.585Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "fae74f0a-79d6-4e9f-b5a7-e27b7d2c4d86",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Вводная информация",
+      "description": "   ",
+      "orderIndex": 1003,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "557e5167-f1d4-4761-8278-7c019e2e4027",
+      "rootId": "d22c883a-81bf-4f54-89b3-a0a4d2a2f673",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:43:21.947Z",
+      "auditUserId": null,
+      "privateId": 27,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.129Z",
+      "lastUpdateDate": "2025-07-29T12:43:21.949Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "90a276b9-e6d2-4c0c-8488-4e43e3d6648b",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Загрузка файлов на сервер",
+      "description": "  ",
+      "orderIndex": 1004,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "3abc9e6f-aabf-49f4-a7fc-18601e3c7714",
+      "rootId": "63ceb461-b1a9-4b31-b803-f53a39e3325e",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:43:27.374Z",
+      "auditUserId": null,
+      "privateId": 29,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.157Z",
+      "lastUpdateDate": "2025-07-29T12:43:27.376Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "ef972741-8be3-45f7-8cf9-d0598a2dbd6b",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Кодогенерация",
+      "description": "   ",
+      "orderIndex": 1005,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "17352092-b215-4173-99eb-c7baa16df3c1",
+      "rootId": null,
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:43:33.495Z",
+      "auditUserId": null,
+      "privateId": 31,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.180Z",
+      "lastUpdateDate": "2025-07-29T12:43:33.496Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "b210a2c3-7d50-42a6-bf59-7eb5a16fe3df",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Оркестрация контейнеров",
+      "description": "    ",
+      "orderIndex": 1006,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "c5d9153b-f7a4-47e2-8309-b68e3a17e787",
+      "rootId": null,
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:43:47.400Z",
+      "auditUserId": null,
+      "privateId": 33,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.207Z",
+      "lastUpdateDate": "2025-07-29T12:43:47.402Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "c828c615-b3c4-4718-8525-cab6a8015939",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Работа с браузерами",
+      "description": "  ",
+      "orderIndex": 1007,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "074b3f48-4dab-4c6f-98a6-ac9d703cc83b",
+      "rootId": null,
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:43:57.043Z",
+      "auditUserId": null,
+      "privateId": 35,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.231Z",
+      "lastUpdateDate": "2025-07-29T12:43:57.044Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "5fc6592a-8205-415d-9c7d-e3612603f583",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Работа с внешними ресурсами и сервисами",
+      "description": "  ",
+      "orderIndex": 1008,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "66b3c847-72ed-4f03-9647-77276471eefa",
+      "rootId": null,
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:04.181Z",
+      "auditUserId": null,
+      "privateId": 37,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.255Z",
+      "lastUpdateDate": "2025-07-29T12:44:04.184Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "8ba2fbea-f14e-4ea2-9180-fcc96f623f4f",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Работа с пользователями и посетителями",
+      "description": "  ",
+      "orderIndex": 1009,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "dca16b73-254a-4fe7-b327-23997cc3ca8d",
+      "rootId": "90dbbf57-c346-419a-a30b-073b518e663c",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:12.094Z",
+      "auditUserId": null,
+      "privateId": 39,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.278Z",
+      "lastUpdateDate": "2025-07-29T12:44:12.095Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "d842c2c4-ccec-4d1d-9168-4ba978d4220d",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Технологии контейнеризации",
+      "description": "Указывается используемая технология контейнеризации.",
+      "orderIndex": 1010,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "c0a6633e-1f88-42b0-9c64-f5b36b73f297",
+      "rootId": null,
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:18.175Z",
+      "auditUserId": null,
+      "privateId": 41,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.309Z",
+      "lastUpdateDate": "2025-07-29T12:44:18.177Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "2c4b83b6-6fb7-484b-8e7f-59ae1772ee78",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Хранение данных",
+      "description": "  ",
+      "orderIndex": 1011,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "86c52338-d2fa-4aab-8673-ac9ced96d30f",
+      "rootId": "b9ab5d98-aceb-451b-93c7-f5107714f57f",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:26.260Z",
+      "auditUserId": null,
+      "privateId": 2,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:42:27.273Z",
+      "lastUpdateDate": "2025-07-29T12:44:26.263Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "100071dd-692c-432e-ab66-4c5b11905e7c",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Тип приложения",
+      "description": "Определяет характеристики разрабатываемого ПО",
+      "orderIndex": 1012,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "9ecfdca5-bee3-4618-9620-2f6a99abafef",
+      "rootId": "ea0e839a-48be-4ad8-b4d6-33f7ff56224e",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:31.804Z",
+      "auditUserId": null,
+      "privateId": 5,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:42:27.273Z",
+      "lastUpdateDate": "2025-07-29T12:44:31.806Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "9ba09463-0d5c-4e8b-87c9-d31c157722e0",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Категории пользователей",
+      "description": "Указываются категории пользователей в разрезе каналов доступа, которые должны иметь доступ к системе",
+      "orderIndex": 1013,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "137b71c6-bb98-4b3f-a34a-2557672216dc",
+      "rootId": "36b984c1-8d6b-4232-96c8-625dcfa3c200",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:37.550Z",
+      "auditUserId": null,
+      "privateId": 43,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:43:41.356Z",
+      "lastUpdateDate": "2025-07-29T12:44:37.552Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "4a438f2d-8d5b-4fbc-b889-3489185e4c3c",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Тип применяемой электронной подписи",
+      "description": "Необходимо выбрать тип применяемой электронной подписи - Простая, УНЭП (сертификаты выдаются внутренним или внешним не квалифицированным УЦ) или УКЭП (сертификаты выдаются квалифицированным УЦ)",
+      "orderIndex": 1014,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "5721c610-6cce-4d77-a382-97873937d86b",
+      "rootId": "d2a35cc4-e278-4fa9-a9f8-458ddd6e8b00",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:43.261Z",
+      "auditUserId": null,
+      "privateId": 3,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:42:27.271Z",
+      "lastUpdateDate": "2025-07-29T12:44:43.263Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "45308f30-b441-4739-ae8a-53d3e4c4022f",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Тип технологического процесса",
+      "description": "Определяет какой технологический процесс будет реализован с использованием АС",
+      "orderIndex": 1015,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "8fbcde7f-5802-45ea-8416-3bfba5990e05",
+      "rootId": "18162c94-fc19-4203-a6b6-6fea3c9bc7dc",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:49.571Z",
+      "auditUserId": null,
+      "privateId": 6,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:42:27.276Z",
+      "lastUpdateDate": "2025-07-29T12:44:49.573Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "425cf682-adaf-4def-82ee-e7e112d887cd",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Категории информации",
+      "description": "Указываются категории информации обрабатываемые в системе",
+      "orderIndex": 1016,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "d1fa0740-cba8-43cd-b2bc-15fc3a0dc9bb",
+      "rootId": "5bc3c3ab-9200-4c1b-a3c1-bf241d51d542",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:44:58.184Z",
+      "auditUserId": null,
+      "privateId": 1,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:42:27.272Z",
+      "lastUpdateDate": "2025-07-29T12:44:58.187Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "8ab2f7e7-07f4-48b1-805b-f1f1f7f7352e",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Место развертывания",
+      "description": "Указывается место развертывания приложения относительно периметра организации",
+      "orderIndex": 1017,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    },
+    {
+      "id": "694c546e-dc02-44d3-a00b-4b397561fd83",
+      "rootId": "fab21330-2df9-4450-ad1f-0fd1ec4e6289",
+      "isAudit": false,
+      "auditDate": "2025-07-29T12:45:05.217Z",
+      "auditUserId": null,
+      "privateId": 4,
+      "isDeleted": false,
+      "createDate": "2025-06-15T09:42:27.275Z",
+      "lastUpdateDate": "2025-07-29T12:45:05.220Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "36f87e87-3ee8-40de-acba-2520a64ff662",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Используемые фреймворки",
+      "description": "Выбираются используемые для создания приложения фреймворки",
+      "orderIndex": 1018,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      }
+    }
+  ],
+  "request": {
+    "limit": 100000,
+    "offset": 0,
+    "sort": {
+      "rules": [
+        {
+          "isDesc": true,
+          "name": "isActive"
+        },
+        {
+          "isDesc": false,
+          "name": "orderIndex"
+        },
+        {
+          "isDesc": false,
+          "name": "shortName"
+        },
+        {
+          "isDesc": false,
+          "name": "name"
+        },
+        {
+          "isDesc": true,
+          "name": "createDate"
+        }
+      ]
+    },
+    "filter": {}
+  }
+}

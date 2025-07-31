@@ -67,7 +67,8 @@ const getImportData = (startProject) => {
        //   const personal_2012_fio = personal_2012.filter(p=>String(p.rowid).includes(ownersID.boss_id))[0]
         // console.log(personal_2012_fio)
         const personal_2012_fio = personal_2012.filter(p=>String(p.rowid).slice(8) == ownersID.boss_id)[0]
-         result.push(personal_2012_fio.fio)
+         const fio = personal_2012_fio?.fio? personal_2012_fio.fio : '-----' 
+         result.push(fio)
       }
       //console.log(result)
       result = [...new Set(result)]
@@ -91,7 +92,8 @@ const getManagers = (reestrProject, managers, personal_2012) => {
          // Для каждого ID овнера получаем ФИО из таблицы personal_2012
          const personal_2012_fio = personal_2012.filter(p=>p.rowid == managerID.id_PERSONAL_2012)[0]
         // console.log(personal_2012_fio)
-         result.push(personal_2012_fio.fio)
+        const fio = personal_2012_fio?.fio? personal_2012_fio.fio : '-----' 
+         result.push(fio)
       }
       //console.log(result)
       result = [...new Set(result)]
