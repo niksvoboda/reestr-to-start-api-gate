@@ -5,9 +5,9 @@ const api_Start     = require("../http/api_Start.js");
 const config        = require("config");
 const path          = require('path');
 const Reestr        = require('../models/reestr.js')
-const {getFieldsMap, 
-      dropDownFields}= require("../assets/baseTemplate.js")
-const {getImportData, 
+const { getFieldsMap, 
+      dropDownFields }= require("../assets/baseTemplate.js")
+const { getImportData, 
   getUpdateData, 
   getSpecificationsIdsFromStart,
   getManagers,
@@ -78,8 +78,7 @@ class StartLogic extends Log {
       }
     }
      /** Функция для  синхронизации одного проекта */
-     async updateProject(token, project, reestrProjects, dropDownFields, owners, managers, personal_2012) {
-      
+     async updateProject(token, project, reestrProjects, dropDownFields, owners, managers, personal_2012) {      
       try {      
           const projectId = project.id? project.id : ''
           const projectName = project.name? project.name : ''

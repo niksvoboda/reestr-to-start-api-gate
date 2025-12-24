@@ -165,7 +165,6 @@ class api_Start extends Log {
             console.error(error);
         }
     }
-
     async getSpecificationIdsCategory(tokens) {
         try {
             const endpoint = config.get('api_url.specification_ids_category_search');
@@ -198,53 +197,49 @@ class api_Start extends Log {
             console.error(error);
         }
     }
- 
-
-
-
     /** Получение списка шаблонов */
-   async getTemplates(tokens) {
-    try {
-        const endpoint = config.get('api_url.template_search');
-        const url = host + endpoint;
+    async getTemplates(tokens) {
+        try {
+            const endpoint = config.get('api_url.template_search');
+            const url = host + endpoint;
 
-        const headers = {
-            'Content-Type': 'application/json; charset=UTF-8',
-            'X-Csrf-Token': tokens.csrfToken,
-            'Cookie': `accessToken=${tokens.accessToken}; refreshToken=${tokens.refreshToken}; __Host-startx.x-csrf-token=${tokens.csrfToken}`
-        };
+            const headers = {
+                'Content-Type': 'application/json; charset=UTF-8',
+                'X-Csrf-Token': tokens.csrfToken,
+                'Cookie': `accessToken=${tokens.accessToken}; refreshToken=${tokens.refreshToken}; __Host-startx.x-csrf-token=${tokens.csrfToken}`
+            };
 
-        const data = {
-            filter: {
-                name: {
-                    like: {
-                        value: "",
-                        caseInsensitive: false
+            const data = {
+                filter: {
+                    name: {
+                        like: {
+                            value: "",
+                            caseInsensitive: false
+                        }
                     }
                 }
+            };
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: headers,
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                console.error('Ошибка:', response.status, result);
+                return null;
             }
-        };
 
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: headers,
-            body: JSON.stringify(data)
-        });
+            return result;
 
-        const result = await response.json();
-
-        if (!response.ok) {
-            console.error('Ошибка:', response.status, result);
-            return null;
+        } catch (error) {
+            console.error(error);
         }
-
-        return result;
-
-    } catch (error) {
-        console.error(error);
     }
-}
-     /** Получение ID шаблона по его имени */
+    /** Получение ID шаблона по его имени */
     async getTemplateIDbyName(token, templateName){
         try {      
             const templates = await this.getTemplates(token)
@@ -256,58 +251,8 @@ class api_Start extends Log {
         } catch (error) {
             console.error(error)
         }
-     }
-     
-    
-     
-     /** Создание проекта */
-     async ___addProject(token, data){
-        try {      
-            const endpoint  = config.get('api_url.project_add')
-            const protectionKey = config.get('api_protectionKey')
-            const url       = host + endpoint
-        // Заголовки
-            const req_config = {
-            headers: {
-            'Content-Type': 'application/json; charset=UTF-8',
-            'Authorization': `Bearer ${token}` // "Bearer ..."
-           }};
-        // Тело запроса
-        const _data = {
-            protectionKey: protectionKey,
-            project: {
-              name:     data.name,  // название проекта
-              codeName: data.codeName?  data.codeName : '', // Идентификатор продукта/проекта
-              rolesMap: data.rolesMap?  data.rolesMap : { data: [] },
-              jiraLink: data.jiraLink?  data.jiraLink : '', // ссылка на проект в Jira
-              comment:  data.comment?   data.comment : '', // краткое описание
-            },
-            application: {
-              name:                 data.name, // название сиситемы, поумолчанию название проекта
-              specificationsIds:    data.specificationsIds? data.specificationsIds : [], // id характеристик для полей с выпадающими опциями
-              performerTypeId:      data.performerTypeId?   data.performerTypeId : '', // id типа исполнителя, можно не указывать
-              customInformation:    data.customInformation? data.customInformation : {fields: []},
-              templateId:           data.templateId?        data.templateId : '', // id шаблона
-            },
-          };  
-          
-          
-        //  console.log(JSON.stringify(_data))
-        // Создаем проект
-            let projects = null;
-            await axios.post(url, _data, req_config)
-            .then(response => {
-              //  console.log(response.data)
-                if (response.data) projects = response.data                   
-            }).catch(error => {
-                console.error(error)
-            }); 
-            return projects
-        } catch (error) {
-            console.error(error)
-        }
-    }
-
+    }     
+    /** Создание проекта */ 
     async addProject(tokens, data) {
     try {
         const endpoint = config.get('api_url.project_add');
