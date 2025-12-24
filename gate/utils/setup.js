@@ -7,6 +7,7 @@ const dbFile        = require("../components/db_File.js");
 const start = async ()=>{
      
      const token = await api_Start.getAuthToken();
+     console.log(token)
      // Получаем информацию о всех категориях
      const _specificationIdsCategory = await api_Start.getSpecificationIdsCategory(token);
      const fileNameCategory = path.join('setup', "_specificationIdsCategory");        

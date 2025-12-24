@@ -18,12 +18,12 @@
   },
   "api_sync_period": 15,
   "api_check_sync_period": 5,
-  "api_host": "https://10.10.1.113",
+  "api_host": "https://10.10.1.100",
   "api_check_ssl": false,
   "api_protectionKey": "rKCAEnD3KNkVTqpvr9YSvrQWn8xhEL9q",
   "api_user_auth": {
     "login": "admin",    
-    "password": "HtHep9!Qb4DxdLyq"  
+    "password": "W!8xp9ck8MT!9H9"  
   },
   "api_url": {
     "login": "/v2/api/user/active/login",    
