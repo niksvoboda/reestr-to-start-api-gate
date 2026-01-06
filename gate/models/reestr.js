@@ -2,9 +2,8 @@ const db            = require("../components/db.js");
 const Log           = require("../components/log.js");
 
 class Reestr extends Log {     
-    name = "Reestr";
-    /** Функция для получения АС */
-    async getAs(LIMIT, OFFSET) {
+    name = "Reestr";    
+    async getAs(LIMIT, OFFSET) {/** Функция для получения АС */
         const query = `SELECT 
         uniq_id, 
         Kratkoe_nazvanie_prilozhenie_spisok_sinonimov, 

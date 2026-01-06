@@ -230,7 +230,7 @@ class StartLogic extends Log {
                 customInformation, 
                 specificationsIds
               }
-              /** Создаем в старте проект  */
+              /** Создаем в старте проект */
               //console.log(data)
               const result = await api_Start.addProject(token, data)
               /** Узнаем его ID */
