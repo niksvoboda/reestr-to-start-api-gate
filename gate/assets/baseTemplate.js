@@ -158,8 +158,96 @@ const dropDownFields = [
    }
  ]
 
+ const getFieldsMap_2 = (reestrProject, _managersStr, _ownersStr) =>{
+   //console.log(reestrProject)
+   const update = {
+      field_3 : reestrProject.Naimenovanie,
+      field_4 : reestrProject.Kratkoe_nazvanie_prilozhenie_spisok_sinonimov,
+      field_5 : reestrProject.uniq_id,
+      field_6 : reestrProject.Naznachenie,
+      field_8 : _ownersStr,
+
+    }
+   const fieldsMap = {
+      "fields": [
+         {
+            "type": "multiline",
+            "value": `${update.field_3}`,
+            "fieldName": "1. a. Полное название автоматизированной системы (АС)",
+            "sortIndex": 3,
+            "fieldDescription": ""
+         },
+         {
+            "type": "multiline",
+            "value": `${update.field_4}`,
+            "fieldName": "b. Краткое название АС",
+            "sortIndex": 4,
+            "fieldDescription": ""
+         },
+         {
+            "type": "multiline",
+            "value": `${update.field_5}`,
+            "fieldName": "c. Номер АС в Реестре АС",
+            "sortIndex": 5,
+            "fieldDescription": ""
+         },
+         {
+            "type": "multiline",
+            "value": `${update.field_6}`,
+            "fieldName": "5. Назначение АС, перечень выполняемых ею функций",
+            "sortIndex": 6,
+            "fieldDescription": ""
+         },
+         {
+            "type": "multiline",
+            "value": `${update.field_8}`,
+            "fieldName": "7. Владелец АС",
+            "sortIndex": 8,
+            "fieldDescription": ""
+         }
+      ]
+   }
+   
+   return fieldsMap
+}
+ /*
+     field_3 : reestrProject.Naimenovanie,
+      field_4 : reestrProject.Kratkoe_nazvanie_prilozhenie_spisok_sinonimov,
+      field_5 : reestrProject.uniq_id,
+      field_6 : reestrProject.Naznachenie,
+      {
+     nameStart: "4. a. Полное название автоматизированной системы (АС)", 
+     nameReestr: "Naimenovanie",
+     idsNames: [
+       {start: "Да", reestr: "DSS"}
+     ]
+   },
+   {
+     nameStart: "b. Краткое название АС", 
+     nameReestr: "Kratkoe_nazvanie_prilozhenie_spisok_sinonimov",
+     idsNames: [
+       {start: "Да", reestr: "DSS"}
+     ]
+   },
+   {
+     nameStart: "c. Номер АС в Реестре АС", 
+     nameReestr: "uniq_id",
+     idsNames: [
+       {start: "Да", reestr: "DSS"}
+     ]
+   },
+   {
+     nameStart: "5. Назначение АС, перечень выполняемых ей функций", 
+     nameReestr: "Naznachenie",
+     idsNames: [
+       {start: "Да", reestr: "DSS"}
+     ]
+   },
+ */
+
 
  module.exports ={
     getFieldsMap,
-    dropDownFields
+    dropDownFields,
+    getFieldsMap_2
  }

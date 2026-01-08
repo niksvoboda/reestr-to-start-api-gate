@@ -2,282 +2,6 @@
   "totalCount": 76,
   "data": [
     {
-      "id": "f62e342c-6d17-4fd2-9d10-0f897d332ff9",
-      "rootId": "f62e342c-6d17-4fd2-9d10-0f897d332ff9",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.226Z",
-      "auditUserId": null,
-      "privateId": 274,
-      "isDeleted": false,
-      "createDate": "2025-10-18T10:45:46.110Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.228Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "40077baa-c850-4f68-91c6-24d7b0fe070c",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "AI/ML приложения",
-      "description": "Безопасность систем на основе искусственного интеллекта и машинного обучения",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "isRequired": false,
-        "defaultValue": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "76709068-bd5d-4dbf-92e2-8bf90ea1af49",
-      "rootId": "76709068-bd5d-4dbf-92e2-8bf90ea1af49",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.244Z",
-      "auditUserId": null,
-      "privateId": 276,
-      "isDeleted": false,
-      "createDate": "2025-10-18T10:45:46.134Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.246Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "34cc134e-28fe-49d0-8878-7e4b55a94342",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Администрирование",
-      "description": "Мониторинг и журналирование работы приложения, ОС и системных сервисов \nA09: Security and Logging Failures",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "isRequired": false,
-        "defaultValue": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "3e16f25a-bc72-42ea-9b8d-a6c095049fc5",
-      "rootId": "3e16f25a-bc72-42ea-9b8d-a6c095049fc5",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.261Z",
-      "auditUserId": null,
-      "privateId": 194,
-      "isDeleted": false,
-      "createDate": "2024-12-18T12:26:35.484Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.263Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "700d4066-3546-4ccf-8e3c-148f32a3db3a",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Архитектура",
-      "description": "Безопасность взаимодействия компонентов и приложений \nA04: Insecure Design",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "c8e67f55-090c-4342-a3e5-33335ec32369",
-      "rootId": "c8e67f55-090c-4342-a3e5-33335ec32369",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.278Z",
-      "auditUserId": null,
-      "privateId": 196,
-      "isDeleted": false,
-      "createDate": "2024-12-18T12:33:32.978Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.281Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "d605fa2b-fe2b-40ea-88c5-00fcd4fa9e05",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Аудит",
-      "description": "Соответствие требованиям стандартов\nA02: Cryptographic Failures\nA07: Identification and Auth Failures",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "63b78c4c-1dc9-490f-ab78-4c1a9d0294fc",
-      "rootId": "63b78c4c-1dc9-490f-ab78-4c1a9d0294fc",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.297Z",
-      "auditUserId": null,
-      "privateId": 388,
-      "isDeleted": false,
-      "createDate": "2025-12-11T15:33:01.019Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.299Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "d028b7e5-7b79-41d1-8f06-f86f1964484f",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Безопасность памяти",
-      "description": "Совокупность методов, принципов и технологий, направленных на предотвращение ошибок и уязвимостей, связанных с доступом к низкоуровневым сегментам программы. ",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "isRequired": false,
-        "defaultValue": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "f97d6dd5-9229-4735-a932-02b4ddee8ca4",
-      "rootId": "f97d6dd5-9229-4735-a932-02b4ddee8ca4",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.312Z",
-      "auditUserId": null,
-      "privateId": 117,
-      "isDeleted": false,
-      "createDate": "2024-04-02T09:41:18.704Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.315Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "90a276b9-e6d2-4c0c-8488-4e43e3d6648b",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Безопасный вывод данных",
-      "description": "Организация безопасного вывода данных в соответствии с контекстом  \nA03: Injection",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "577d8b82-1069-4c3b-aaef-17cf0bfdb31a",
-      "rootId": "577d8b82-1069-4c3b-aaef-17cf0bfdb31a",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.337Z",
-      "auditUserId": null,
-      "privateId": 182,
-      "isDeleted": false,
-      "createDate": "2024-07-08T09:22:38.010Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.341Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "fae74f0a-79d6-4e9f-b5a7-e27b7d2c4d86",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Вводная информация",
-      "description": "Базовые знания по безопасной разработке ",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "3e4f9822-32dc-46d7-b352-bbe12e4df51f",
-      "rootId": "3e4f9822-32dc-46d7-b352-bbe12e4df51f",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.359Z",
-      "auditUserId": null,
-      "privateId": 102,
-      "isDeleted": false,
-      "createDate": "2024-01-15T10:04:53.087Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.363Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "b210a2c3-7d50-42a6-bf59-7eb5a16fe3df",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Контейнеры и оркестрация",
-      "description": "Безопасное управление контейнерами и безопасность оркестрации ",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "ef117aaf-471f-4e63-967a-a3bc2b04aa6c",
-      "rootId": "ef117aaf-471f-4e63-967a-a3bc2b04aa6c",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.382Z",
-      "auditUserId": null,
-      "privateId": 283,
-      "isDeleted": false,
-      "createDate": "2025-10-18T10:45:46.221Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.384Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "221cabd6-490d-455c-8b5e-2f89001e6dca",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Настройка инфраструктуры",
-      "description": "Безопасная настройка серверов и сетевого оборудования, системных сервисов, защита периметра, управление правами доступа  \nA05: Security Misconfiguration",
-      "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
       "id": "25348cd3-1639-447c-a972-e6d07045d6cc",
       "rootId": "25348cd3-1639-447c-a972-e6d07045d6cc",
       "isAudit": false,
@@ -480,99 +204,6 @@
       "name": "Хранение данных",
       "description": "Безопасное хранение конфиденциальных данных на устройстве пользователей \nA02:2021-Cryptographic Failures",
       "orderIndex": 0,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "74893900-4282-4e70-9869-21048ecf5b93",
-      "rootId": "74893900-4282-4e70-9869-21048ecf5b93",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.540Z",
-      "auditUserId": null,
-      "privateId": 5,
-      "isDeleted": false,
-      "createDate": "2023-09-06T12:45:23.056Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.542Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "100071dd-692c-432e-ab66-4c5b11905e7c",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Тип приложения",
-      "description": "Определяет характеристики разрабатываемого ПО",
-      "orderIndex": 2,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "be924376-5492-4a9f-b841-641d5cf89818",
-      "rootId": "be924376-5492-4a9f-b841-641d5cf89818",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.556Z",
-      "auditUserId": null,
-      "privateId": 3,
-      "isDeleted": false,
-      "createDate": "2023-09-06T12:45:23.058Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.559Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "9ba09463-0d5c-4e8b-87c9-d31c157722e0",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Категории пользователей",
-      "description": "Указываются категории пользователей в разрезе каналов доступа, которые должны иметь доступ к системе",
-      "orderIndex": 3,
-      "categoryType": "specificationCategoryValue",
-      "conditionsMap": {
-        "useIfSpecificationEntitiesIds": [],
-        "useIfNotSpecificationEntitiesIds": []
-      },
-      "conditionsTextMap": {
-        "text": "",
-        "isRequired": false,
-        "defaultText": ""
-      },
-      "isSingleChoice": false
-    },
-    {
-      "id": "1f9c5ce3-9677-454e-95ec-992b0d488625",
-      "rootId": "1f9c5ce3-9677-454e-95ec-992b0d488625",
-      "isAudit": false,
-      "auditDate": "2025-12-17T13:26:35.576Z",
-      "auditUserId": null,
-      "privateId": 188,
-      "isDeleted": false,
-      "createDate": "2024-07-08T09:22:38.246Z",
-      "lastUpdateDate": "2025-12-17T13:26:35.579Z",
-      "lastDeleteDate": null,
-      "isActive": true,
-      "isBundled": false,
-      "globalId": "4a438f2d-8d5b-4fbc-b889-3489185e4c3c",
-      "bundleId": null,
-      "bundleLinksIds": {},
-      "name": "Тип применяемой электронной подписи",
-      "description": "Необходимо выбрать тип применяемой электронной подписи - Простая, УНЭП (сертификаты выдаются внутренним или внешним не квалифицированным УЦ) или УКЭП (сертификаты выдаются квалифицированным УЦ)",
-      "orderIndex": 3,
       "categoryType": "specificationCategoryValue",
       "conditionsMap": {
         "useIfSpecificationEntitiesIds": [],
@@ -1890,6 +1521,36 @@
       "isSingleChoice": false
     },
     {
+      "id": "f62e342c-6d17-4fd2-9d10-0f897d332ff9",
+      "rootId": "f62e342c-6d17-4fd2-9d10-0f897d332ff9",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:41.343Z",
+      "auditUserId": null,
+      "privateId": 274,
+      "isDeleted": false,
+      "createDate": "2025-10-18T10:45:46.110Z",
+      "lastUpdateDate": "2026-01-06T15:18:41.344Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "40077baa-c850-4f68-91c6-24d7b0fe070c",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "AI/ML приложения",
+      "description": "Безопасность систем на основе искусственного интеллекта и машинного обучения",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      },
+      "isSingleChoice": false
+    },
+    {
       "id": "d915e2fc-4da7-412c-a55a-5729e62dc83e",
       "rootId": "d915e2fc-4da7-412c-a55a-5729e62dc83e",
       "isAudit": false,
@@ -1923,6 +1584,98 @@
       "isSingleChoice": false
     },
     {
+      "id": "76709068-bd5d-4dbf-92e2-8bf90ea1af49",
+      "rootId": "76709068-bd5d-4dbf-92e2-8bf90ea1af49",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:45.565Z",
+      "auditUserId": null,
+      "privateId": 276,
+      "isDeleted": false,
+      "createDate": "2025-10-18T10:45:46.134Z",
+      "lastUpdateDate": "2026-01-06T15:18:45.567Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "34cc134e-28fe-49d0-8878-7e4b55a94342",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Администрирование",
+      "description": "Мониторинг и журналирование работы приложения, ОС и системных сервисов \nA09: Security and Logging Failures",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "3e16f25a-bc72-42ea-9b8d-a6c095049fc5",
+      "rootId": "3e16f25a-bc72-42ea-9b8d-a6c095049fc5",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:50.283Z",
+      "auditUserId": null,
+      "privateId": 194,
+      "isDeleted": false,
+      "createDate": "2024-12-18T12:26:35.484Z",
+      "lastUpdateDate": "2026-01-06T15:18:50.285Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "700d4066-3546-4ccf-8e3c-148f32a3db3a",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Архитектура",
+      "description": "Безопасность взаимодействия компонентов и приложений \nA04: Insecure Design",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "c8e67f55-090c-4342-a3e5-33335ec32369",
+      "rootId": "c8e67f55-090c-4342-a3e5-33335ec32369",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:52.928Z",
+      "auditUserId": null,
+      "privateId": 196,
+      "isDeleted": false,
+      "createDate": "2024-12-18T12:33:32.978Z",
+      "lastUpdateDate": "2026-01-06T15:18:52.931Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "d605fa2b-fe2b-40ea-88c5-00fcd4fa9e05",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Аудит",
+      "description": "Соответствие требованиям стандартов\nA02: Cryptographic Failures\nA07: Identification and Auth Failures",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
       "id": "d3d1740f-6235-49ef-bdba-da4e4217f73d",
       "rootId": "d3d1740f-6235-49ef-bdba-da4e4217f73d",
       "isAudit": false,
@@ -1940,6 +1693,98 @@
       "bundleLinksIds": {},
       "name": "Безопасность 1С",
       "description": "   ",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "63b78c4c-1dc9-490f-ab78-4c1a9d0294fc",
+      "rootId": "63b78c4c-1dc9-490f-ab78-4c1a9d0294fc",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:55.757Z",
+      "auditUserId": null,
+      "privateId": 388,
+      "isDeleted": false,
+      "createDate": "2025-12-11T15:33:01.019Z",
+      "lastUpdateDate": "2026-01-06T15:18:55.759Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "d028b7e5-7b79-41d1-8f06-f86f1964484f",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Безопасность памяти",
+      "description": "Совокупность методов, принципов и технологий, направленных на предотвращение ошибок и уязвимостей, связанных с доступом к низкоуровневым сегментам программы. ",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "isRequired": false,
+        "defaultValue": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "f97d6dd5-9229-4735-a932-02b4ddee8ca4",
+      "rootId": "f97d6dd5-9229-4735-a932-02b4ddee8ca4",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:59.911Z",
+      "auditUserId": null,
+      "privateId": 117,
+      "isDeleted": false,
+      "createDate": "2024-04-02T09:41:18.704Z",
+      "lastUpdateDate": "2026-01-06T15:18:59.912Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "90a276b9-e6d2-4c0c-8488-4e43e3d6648b",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Безопасный вывод данных",
+      "description": "Организация безопасного вывода данных в соответствии с контекстом  \nA03: Injection",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "577d8b82-1069-4c3b-aaef-17cf0bfdb31a",
+      "rootId": "577d8b82-1069-4c3b-aaef-17cf0bfdb31a",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:19:30.546Z",
+      "auditUserId": null,
+      "privateId": 182,
+      "isDeleted": false,
+      "createDate": "2024-07-08T09:22:38.010Z",
+      "lastUpdateDate": "2026-01-06T15:19:30.549Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "fae74f0a-79d6-4e9f-b5a7-e27b7d2c4d86",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Вводная информация",
+      "description": "Базовые знания по безопасной разработке ",
       "orderIndex": 0,
       "categoryType": "specificationCategoryValue",
       "conditionsMap": {
@@ -2148,6 +1993,37 @@
       "isSingleChoice": false
     },
     {
+      "id": "3e4f9822-32dc-46d7-b352-bbe12e4df51f",
+      "rootId": "3e4f9822-32dc-46d7-b352-bbe12e4df51f",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:19:33.199Z",
+      "auditUserId": null,
+      "privateId": 102,
+      "isDeleted": false,
+      "createDate": "2024-01-15T10:04:53.087Z",
+      "lastUpdateDate": "2026-01-06T15:19:33.201Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "b210a2c3-7d50-42a6-bf59-7eb5a16fe3df",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Контейнеры и оркестрация",
+      "description": "Безопасное управление контейнерами и безопасность оркестрации ",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
       "id": "28e92a8f-c5a9-4deb-8a12-76fa4d18f38a",
       "rootId": "28e92a8f-c5a9-4deb-8a12-76fa4d18f38a",
       "isAudit": false,
@@ -2171,6 +2047,37 @@
         "useIfSpecificationEntitiesIds": [
           "4e062ecd-041e-4947-bff5-c2464af1ead2"
         ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "ef117aaf-471f-4e63-967a-a3bc2b04aa6c",
+      "rootId": "ef117aaf-471f-4e63-967a-a3bc2b04aa6c",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:19:35.566Z",
+      "auditUserId": null,
+      "privateId": 283,
+      "isDeleted": false,
+      "createDate": "2025-10-18T10:45:46.221Z",
+      "lastUpdateDate": "2026-01-06T15:19:35.568Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "221cabd6-490d-455c-8b5e-2f89001e6dca",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Настройка инфраструктуры",
+      "description": "Безопасная настройка серверов и сетевого оборудования, системных сервисов, защита периметра, управление правами доступа  \nA05: Security Misconfiguration",
+      "orderIndex": 0,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
         "useIfNotSpecificationEntitiesIds": []
       },
       "conditionsTextMap": {
@@ -2369,6 +2276,99 @@
         "useIfSpecificationEntitiesIds": [
           "4e062ecd-041e-4947-bff5-c2464af1ead2"
         ],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "74893900-4282-4e70-9869-21048ecf5b93",
+      "rootId": "74893900-4282-4e70-9869-21048ecf5b93",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:38.449Z",
+      "auditUserId": null,
+      "privateId": 5,
+      "isDeleted": false,
+      "createDate": "2023-09-06T12:45:23.056Z",
+      "lastUpdateDate": "2026-01-06T15:18:38.452Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "100071dd-692c-432e-ab66-4c5b11905e7c",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Тип приложения",
+      "description": "Определяет характеристики разрабатываемого ПО",
+      "orderIndex": 2,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "be924376-5492-4a9f-b841-641d5cf89818",
+      "rootId": "be924376-5492-4a9f-b841-641d5cf89818",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:27.348Z",
+      "auditUserId": null,
+      "privateId": 3,
+      "isDeleted": false,
+      "createDate": "2023-09-06T12:45:23.058Z",
+      "lastUpdateDate": "2026-01-06T15:18:27.349Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "9ba09463-0d5c-4e8b-87c9-d31c157722e0",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Категории пользователей",
+      "description": "Указываются категории пользователей в разрезе каналов доступа, которые должны иметь доступ к системе",
+      "orderIndex": 3,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
+        "useIfNotSpecificationEntitiesIds": []
+      },
+      "conditionsTextMap": {
+        "text": "",
+        "isRequired": false,
+        "defaultText": ""
+      },
+      "isSingleChoice": false
+    },
+    {
+      "id": "1f9c5ce3-9677-454e-95ec-992b0d488625",
+      "rootId": "1f9c5ce3-9677-454e-95ec-992b0d488625",
+      "isAudit": false,
+      "auditDate": "2026-01-06T15:18:34.893Z",
+      "auditUserId": null,
+      "privateId": 188,
+      "isDeleted": false,
+      "createDate": "2024-07-08T09:22:38.246Z",
+      "lastUpdateDate": "2026-01-06T15:18:34.896Z",
+      "lastDeleteDate": null,
+      "isActive": false,
+      "isBundled": false,
+      "globalId": "4a438f2d-8d5b-4fbc-b889-3489185e4c3c",
+      "bundleId": null,
+      "bundleLinksIds": {},
+      "name": "Тип применяемой электронной подписи",
+      "description": "Необходимо выбрать тип применяемой электронной подписи - Простая, УНЭП (сертификаты выдаются внутренним или внешним не квалифицированным УЦ) или УКЭП (сертификаты выдаются квалифицированным УЦ)",
+      "orderIndex": 3,
+      "categoryType": "specificationCategoryValue",
+      "conditionsMap": {
+        "useIfSpecificationEntitiesIds": [],
         "useIfNotSpecificationEntitiesIds": []
       },
       "conditionsTextMap": {

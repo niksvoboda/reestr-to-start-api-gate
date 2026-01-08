@@ -1,20 +1,21 @@
-const db            = require("../components/db.js");
-const Log           = require("../components/log.js");
-const dbFile        = require("../components/db_File.js");
-const api_Start     = require("../http/api_Start.js");
+const db            = require("./components/db.js");
+const Log           = require("./components/log.js");
+const dbFile        = require("./components/db_File.js");
+const api_Start     = require("./http/api_Start.js");
 const config        = require("config");
 const path          = require('path');
-const Reestr        = require('../models/reestr.js')
+const Reestr        = require('./models/reestr.js')
 const { getFieldsMap, 
-      dropDownFields }= require("../assets/baseTemplate.js")
+      dropDownFields }= require("./assets/baseTemplate.js")
 const { getImportData, 
   getUpdateData, 
   getSpecificationsIdsFromStart,
   getManagers,
   getOwners,
   getUnsyncMapping,
-  getReSyncMapping
-} = require("../utils/utils.js")
+  getReSyncMapping,
+  getSpecsBrief
+} = require("./utils/utils.js")
 
 const saveFile = true
 
@@ -31,7 +32,7 @@ class StartLogic extends Log {
         // Получаем ID категорий заданных в базовом шаблоне
         const token = await api_Start.getAuthToken();
         const _specificationIdsCategory = await api_Start.getSpecificationIdsCategory(token); 
-        await saveFile && dbFile.writeFileJSON("_specificationIdsCategory", _specificationIdsCategory, true)
+        //await saveFile && dbFile.writeFileJSON("_specificationIdsCategory", _specificationIdsCategory, true)
         let dropDownFieldsWithID = []      
         for (const field of dropDownFields) {
           const categorys = _specificationIdsCategory.data    
@@ -104,7 +105,7 @@ class StartLogic extends Log {
             const _ownersStr = getOwners(reestrProject, owners, personal_2012)
             const _managersStr = getManagers(reestrProject, managers, personal_2012)
             const customInformationFromReestr = getFieldsMap(reestrProject, _managersStr, _ownersStr);  // кастомные текстовые поля из реестра в преобразованном для старта виде
-             
+            console.log(customInformationFromReestr)
             //Получаем кастомные поля проекта индивидуальным запросом, так как как они не отдаются общим запросом            
             const startProjectFromByID = await api_Start.getProjectByID(token, projectId);
             /** Производим сравнение по заданной логике: 
@@ -192,9 +193,17 @@ class StartLogic extends Log {
         /** Получаем проекты из "Старта" */
         let s0_startProjects = await api_Start.getProjects(token);
         s0_startProjects = s0_startProjects.data
+        // Получаем информацию о всех полях во всех категорях, так как разрабы старта стали текстовые поля анкеты 
+        // хранить там же где и раньше хранилит select поля то нам нужно вытянуть из этой таблицы все записи и
+        // по полю в проекте specificationIds сформировать состояние анкеты
+        const _getSpecificationIds = await api_Start.getSpecificationIds(token);        
+        await saveFile && await dbFile.writeFileJSON(path.join('setup', "_specificationIds"), _getSpecificationIds)
         // await dbFile.writeFile('s0_startProjects', s0_startProjects)  
         // console.log(s0_startProjects)     
+        const _specificationIdsCategory = await api_Start.getSpecificationIdsCategory(token);
+        await saveFile && await dbFile.writeFileJSON(path.join('setup', "_specificationIdsCategory"), _specificationIdsCategory)
         /** Получаем выпадающие поля шаблона с их текущими ID в данной конкретной системе */
+
         const dropDownFields = await this.getDropDownFields()
         /** Проходим по списку проектов из реестра и для каждого создаем проект в старте, в старте проекты создаются по имени */
         for (const reestrProject of reestrProjects) {
@@ -207,7 +216,14 @@ class StartLogic extends Log {
               const project = check[0]
               const projectId = project.id? project.id : ''
               // Получаем кастомные поля проекта индивидуальным запросом, так как как они не отдаются общим запросом,
-              const projectData = await api_Start.getProjectByID(token, projectId);
+              let projectData = await api_Start.getProjectByID(token, 
+                "b2223464-eebc-4ee6-b71a-a1b98d7b7614"//projectId
+              );     
+              projectData = projectData?.data[0]
+              // поле проекта specificationIds обогощаем дополнительной информацией из _getSpecificationIds названия и дескриптшн
+              // после чего сохраняев в поле fullSpecificationIds
+              projectData['fullSpecificationIds'] = getSpecsBrief(projectData.specificationsIds, _getSpecificationIds.data, _specificationIdsCategory.data)
+              await saveFile && dbFile.writeFileJSON("projectData", projectData, true)
               // Делаем бэкап маппинга тех проектов которые есть c таким именем в реестре
               const saveData = getImportData(projectData)
               // Предварительно обрабатываем маппинг проекта так чтобы отключить синхронизацию у всех полей которые уже являются заполенными в старте  
@@ -247,10 +263,11 @@ class StartLogic extends Log {
                 const thisProjectInStart = _s1_startProjects[0]
                 const projectId = thisProjectInStart.id? thisProjectInStart.id : ''
                 // Получаем кастомные поля проекта индивидуальным запросом, так как как они не отдаются общим запросом,
-                const projectData = await api_Start.getProjectByID(token, projectId);
+                let projectData = await api_Start.getProjectByID(token, projectId);     
+                projectData = projectData?.data[0]
                 // Делаем бэкап маппинга тех проектов которые есть c таким именем в реестре
                 const saveData = getImportData(projectData)
-                const fileName = path.join('import', projectId);        
+                const fileName = path.join('import', projectId);
                 await dbFile.writeFileJSON(fileName, saveData, true)
               } else {
                 console.log(`Проект с именем: ${name} не найден в АС "Старт"`)
@@ -267,22 +284,9 @@ class StartLogic extends Log {
       }
     }
 
-     /** Функция для переодического вызова функции синхронизации всех проектов */
-    async autoSync(){
-        let polling_time = config.get("api_check_sync_period") * 1000;;
-        /** Если синхронизация не выполняется в данный момент то запускаем */
-        if (!syncOn) {
-            syncOn = true;  
-            const result = await this.updateProjects();
-           // console.log(result);
-            syncOn = false;
-        }        
-        /** Устанавливаем время следующего вызова */
-        setTimeout(()=>{
-            this.autoSync();
-        }, polling_time );
-        this.blue(`sync_interval: ${config.get("api_sync_period")} seconds`);
-    }
+   
 }
 
-module.exports = new StartLogic();
+const app = new StartLogic();
+
+app.importProjects()

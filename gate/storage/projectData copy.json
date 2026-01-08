@@ -1,0 +1,246 @@
+{
+  "id": "39433c27-72c4-4b06-93a0-56d0f007eb3e",
+  "rootId": "39433c27-72c4-4b06-93a0-56d0f007eb3e",
+  "isAudit": false,
+  "auditDate": "2026-01-07T06:42:34.807Z",
+  "auditUserId": null,
+  "privateId": 472,
+  "isDeleted": false,
+  "createDate": "2026-01-07T06:33:41.044Z",
+  "lastUpdateDate": "2026-01-07T06:42:34.809Z",
+  "lastDeleteDate": null,
+  "isActive": true,
+  "isBundled": false,
+  "globalId": "3c4e1e6b-09c8-47ba-a63b-9c466958d777",
+  "bundleId": null,
+  "bundleLinksIds": {},
+  "name": "Система управления документооборотом3",
+  "acceptStatus": "draft",
+  "isUnitedWithProject": true,
+  "unitedProjectId": "1ee1b16b-81ba-4bc7-8439-a774eb1ef0bd",
+  "projectId": "1ee1b16b-81ba-4bc7-8439-a774eb1ef0bd",
+  "dataId": "74bcf9fc-366d-47ea-bdaf-8962f440cfb4",
+  "performerTypeId": "dc6542e0-5b50-46e2-9b77-9229e6802286",
+  "specificationsIds": [
+    "c7c45e3c-462c-4e83-bb26-36700412439d",
+    "5ffbd42c-37ec-417d-b974-3715c2e6cf8a",
+    "5c66f185-2b5a-47cb-a137-f3e03f5b86c4",
+    "c16c5fee-04e1-492a-ae56-5866bc4998e4",
+    "25d748dc-c2c3-4d12-9cc0-793f621e833e",
+    "968f99cc-83ca-4568-b7cb-bc09c573d9e9",
+    "b2bbffad-8c2f-4e34-8ad2-97cab2cd0138",
+    "e440eac5-922b-4b8a-93d8-988e71695a3a",
+    "9040af78-1d01-46a4-adc7-bd212ac20189",
+    "69757369-b8c3-4d4f-a2be-ba70c61d3677",
+    "c4f8cbbf-1cb0-4939-aefb-1623409b4a74",
+    "f169f3d3-4215-4c37-a54f-633e13f9f27f",
+    "0fbb6356-e514-426c-986b-b4c655cfbead",
+    "17328725-ce2f-4c14-893b-f9d6aa7e746e",
+    "5b3dc0f1-ac82-4c61-abc7-840211138734"
+  ],
+  "customInformation": {
+    "fields": [
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "1. Полные наименования автоматизируемых процессов с указанием их кодов",
+        "sortIndex": 1,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "2. Наименования этапов процессов с указанием их кодов",
+        "sortIndex": 2,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "Система управления документооборотом3",
+        "fieldName": "4. a. Полное название автоматизированной системы (АС)",
+        "sortIndex": 3,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "DocManage",
+        "fieldName": "b. Краткое название АС",
+        "sortIndex": 4,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "1",
+        "fieldName": "c. Номер АС в Реестре АС",
+        "sortIndex": 5,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "Обработка внутренней документации",
+        "fieldName": "5. Назначение АС, перечень выполняемых ей функций",
+        "sortIndex": 6,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "6. Заказчик АС",
+        "sortIndex": 7,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "-----",
+        "fieldName": "7. Владелец АС",
+        "sortIndex": 8,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "В АС планируется взаимодействие со следующими АС",
+        "sortIndex": 9,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "Получение данных из автоматизированных систем",
+        "sortIndex": 10,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "Получатели информации из АС",
+        "sortIndex": 11,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "11. Предполагаемое количество пользователей АС",
+        "sortIndex": 12,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "Предполагаемое количество групп/ролей в АС",
+        "sortIndex": 13,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "21. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
+        "sortIndex": 14,
+        "fieldDescription": ""
+      },
+      {
+        "type": "multiline",
+        "value": "",
+        "fieldName": "Руководитель ССП ИТ-блока, выполняющего работы по созданию (модернизации) АС",
+        "sortIndex": 15,
+        "fieldDescription": ""
+      }
+    ]
+  },
+  "riskData": null,
+  "templateId": null,
+  "versionNumber": "0.0.0",
+  "lastAcceptanceTestsDate": null,
+  "fullSpecificationIds": [
+    {
+      "id": "c7c45e3c-462c-4e83-bb26-36700412439d",
+      "fieldName": "b. Краткое название АС",
+      "fieldValue": "DocManage",
+      "sync": true
+    },
+    {
+      "id": "5ffbd42c-37ec-417d-b974-3715c2e6cf8a",
+      "fieldName": "c. Номер АС в Реестре АС",
+      "fieldValue": "1",
+      "sync": true
+    },
+    {
+      "id": "5c66f185-2b5a-47cb-a137-f3e03f5b86c4",
+      "fieldName": "2. Полные наименования автоматизируемых процессов с указанием их кодов",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "c16c5fee-04e1-492a-ae56-5866bc4998e4",
+      "fieldName": "3. Наименования этапов процессов с указанием их кодов",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "25d748dc-c2c3-4d12-9cc0-793f621e833e",
+      "fieldName": "5. Назначение АС, перечень выполняемых ею функций",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "968f99cc-83ca-4568-b7cb-bc09c573d9e9",
+      "fieldName": "В АС планируется взаимодействие со следующими АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "b2bbffad-8c2f-4e34-8ad2-97cab2cd0138",
+      "fieldName": "Получение данных из АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "e440eac5-922b-4b8a-93d8-988e71695a3a",
+      "fieldName": "Получатели информации из АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "9040af78-1d01-46a4-adc7-bd212ac20189",
+      "fieldName": "11. Предполагаемое количество пользователей АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "69757369-b8c3-4d4f-a2be-ba70c61d3677",
+      "fieldName": "Предполагаемое количество групп/ролей в АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "c4f8cbbf-1cb0-4939-aefb-1623409b4a74",
+      "fieldName": "6. Заказчик АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "f169f3d3-4215-4c37-a54f-633e13f9f27f",
+      "fieldName": "7. Владелец АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "0fbb6356-e514-426c-986b-b4c655cfbead",
+      "fieldName": "Руководитель ССП ИТ-блока, выполняющего работы по созданию (модернизации) АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "17328725-ce2f-4c14-893b-f9d6aa7e746e",
+      "fieldName": "21. (J). Дополнительные условия/ограничения/требования Заказчика АС к проектируемой АС",
+      "fieldValue": "2",
+      "sync": true
+    },
+    {
+      "id": "5b3dc0f1-ac82-4c61-abc7-840211138734",
+      "fieldName": "8. (B). Категории обрабатываемой в АС информации",
+      "fieldValue": "(B3) Информация категории «Банковская тайна» (БТ)",
+      "sync": true
+    }
+  ]
+}
