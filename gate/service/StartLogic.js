@@ -16,8 +16,6 @@ const { getImportData,
   getReSyncMapping
 } = require("../utils/utils.js")
 
-const saveFile = true
-
 /** Флаг указывающий что в данный момент идет синхронизация */
 let syncOn = false;
 /** Отключение/включение проверки SSL сертификата "Старта" */
@@ -31,7 +29,6 @@ class StartLogic extends Log {
         // Получаем ID категорий заданных в базовом шаблоне
         const token = await api_Start.getAuthToken();
         const _specificationIdsCategory = await api_Start.getSpecificationIdsCategory(token); 
-        await saveFile && dbFile.writeFileJSON("_specificationIdsCategory", _specificationIdsCategory, true)
         let dropDownFieldsWithID = []      
         for (const field of dropDownFields) {
           const categorys = _specificationIdsCategory.data    
@@ -44,7 +41,6 @@ class StartLogic extends Log {
             dropDownFieldsWithID.push(newField)
           }  
         }      
-        await saveFile && dbFile.writeFileJSON("dropDownFieldsWithID", dropDownFieldsWithID, true)
         // Получаем ID значений полей в каждой категории  
         let dropDownFieldsWithIDWithIds = []
         const _specificationIds = await api_Start.getSpecificationIds(token);
@@ -76,10 +72,9 @@ class StartLogic extends Log {
           }          
         }
         //console.log(JSON.stringify(dropDownFieldsWithIDWithIds)) 
-        await saveFile && dbFile.writeFileJSON("dropDownFieldsWithIDWithIds", dropDownFieldsWithIDWithIds, true)
         return dropDownFieldsWithIDWithIds
       } catch (error) {
-         console.log(error)
+        
       }
     }
      /** Функция для  синхронизации одного проекта */
@@ -89,7 +84,7 @@ class StartLogic extends Log {
           const projectName = project.name? project.name : ''
           // Проверяем есть ли проект в базе реестра  и в старте одновременно, 
           const check = reestrProjects.filter(p=>p.Naimenovanie == projectName)
-          // console.log('check',  check) 
+        //  console.log('check',  check) 
           // Проверяем есть ли маппинг 
           const fileName = path.join('import', projectId); 
           const mappingProject = await dbFile.readFileJSON(fileName)
@@ -102,17 +97,17 @@ class StartLogic extends Log {
             const specificationsIdsFromStart = getSpecificationsIdsFromStart(reestrProject, dropDownFields) //выпадающие поля из старта
              
             const _ownersStr = getOwners(reestrProject, owners, personal_2012)
-            const _managersStr = getManagers(reestrProject, managers, personal_2012)
+            const _managersStr = getManagers(reestrProject, managers, personal_2012) 
             const customInformationFromReestr = getFieldsMap(reestrProject, _managersStr, _ownersStr);  // кастомные текстовые поля из реестра в преобразованном для старта виде
-             
+           
             //Получаем кастомные поля проекта индивидуальным запросом, так как как они не отдаются общим запросом            
-            const startProjectFromByID = await api_Start.getProjectByID(token, projectId);
+            const startProjectFromByID = await api_Start.getProjectByID(token, projectId);    
             /** Производим сравнение по заданной логике: 
              * 1) Если поле менялось первый раз в реестре, а в старте еще не менялось то импортируем данные из реестра в старт и отключаем дальнейшуюю синхронизацию 
              * 2) Если поле уже менялось в старте то отключаем синхронизацию и ничего не импортируем, оставляем актуальные данные из старта
-             */    
+             */   
            // await dbFile.writeFileJSON(fileName, startProject)
-            const { updateData, newMappingProject, updateProjectFlag } = await getUpdateData(startProjectFromByID, project, customInformationFromReestr, 
+            const {updateData, newMappingProject, updateProjectFlag} = await getUpdateData(startProjectFromByID, project, customInformationFromReestr, 
               mappingProject, specificationsIdsFromStart, _ownersStr, _managersStr)
             // Апдейтим проект если проект изменялся и флаг апдейта включен
             if (updateProjectFlag == true) {
@@ -192,8 +187,8 @@ class StartLogic extends Log {
         /** Получаем проекты из "Старта" */
         let s0_startProjects = await api_Start.getProjects(token);
         s0_startProjects = s0_startProjects.data
-        // await dbFile.writeFile('s0_startProjects', s0_startProjects)  
-        // console.log(s0_startProjects)     
+       // await dbFile.writeFile('s0_startProjects', s0_startProjects)  
+       // console.log(s0_startProjects)     
         /** Получаем выпадающие поля шаблона с их текущими ID в данной конкретной системе */
         const dropDownFields = await this.getDropDownFields()
         /** Проходим по списку проектов из реестра и для каждого создаем проект в старте, в старте проекты создаются по имени */
@@ -267,6 +262,25 @@ class StartLogic extends Log {
       }
     }
 
+    async createProject() {
+      try {
+        /** логинимся */
+        const token = await api_Start.getAuthToken();
+        console.log(token)
+        /** Получаем проекты из "Старта" */
+        const addProjects = await api_Start.addProjects(token);
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    /** Функция для первоначального переноса проектов из реестра в старт */
+    async startCreateProjects() {
+      try {
+        
+      } catch (error) {
+        console.log(error)
+      }
+    }
      /** Функция для переодического вызова функции синхронизации всех проектов */
     async autoSync(){
         let polling_time = config.get("api_check_sync_period") * 1000;;
