@@ -4,19 +4,16 @@ const getFieldsMap = (reestrProject, _managersStr, _ownersStr) =>{
    const update = {
       field_1 : '',
       field_2 : '',
-      field_3 : reestrProject.Naimenovanie,
-      field_4 : reestrProject.Kratkoe_nazvanie_prilozhenie_spisok_sinonimov,
-      field_5 : reestrProject.uniq_id,
-      field_6 : reestrProject.Naznachenie,
+      field_3 : reestrProject.Naimenovanie?? '-',
+      field_4 : reestrProject.Kratkoe_nazvanie_prilozhenie_spisok_sinonimov?? '-',
+      field_5 : reestrProject.uniq_id?? '-',
+      field_6 : reestrProject.Naznachenie?? '-',
       field_7 : '-', //_managersStr
-      field_8 : _ownersStr,
+      field_8 : _ownersStr?? '-',
       field_9 : '',
       field_10 : '',
       field_11 : '',
       field_12 : '',
-      field_13 : '',
-      field_14 : '',
-      field_15 : '',
     }
    const fieldsMap = {
       "fields": [

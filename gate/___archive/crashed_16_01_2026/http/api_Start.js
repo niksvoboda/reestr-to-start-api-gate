@@ -283,8 +283,7 @@ class api_Start extends Log {
                 templateId: data.templateId ? data.templateId : '',
             },
         };
-
-        // console.log(_data)
+        //console.log(_data)
         //await db_File.writeFileJSON('addProject_data', _data)
         const response = await fetch(url, {
             method: 'POST',

@@ -6,20 +6,21 @@ const dbFile        = require("../components/db_File.js");
  * @returns 
  * возвращаем объект для сохранения в бэкапфайл
  */
-const getImportData = (startProject) => {
+const getImportData = (startProjectData) => {
   // console.log(startProject)
     try {
-       const data = startProject?.data[0];
+       const data = startProjectData;
        const customInformation = data?.customInformation ? data.customInformation : {
           fields: []
        }
-       const specificationsIds = data?.specificationsIds ? data.specificationsIds : []
+       const fullSpecificationIds = data?.fullSpecificationIds ? data.fullSpecificationIds : []
  
        const saveData = {
           id: data.id,
           name: data.name,
-          specificationsIds: specificationsIds,
-          specificationsIdsSync: true,
+          fullSpecificationIds: fullSpecificationIds,
+          //specificationsIdsSync: true,
+
           customInformation: customInformation.fields.map(p => p = {
              ...p,
              sync: true
@@ -121,7 +122,7 @@ function arraysAreEqual(array1, array2) {
        // console.log('search_element', search_element)
         if (search_element.length < 1) {
            return false; // Если такой элемент не найден 
-         }
+        }
      }    
    }    
    // Если все проверки пройдены, массивы одинаковы
@@ -310,6 +311,42 @@ const getUpdateData = async (startProjectFromByID, project, customInformationFro
    // Возвращаем обновленный targetObj
    return targetObj;
  }
+
+ /**
+ * @param {string[]} specificationsIds - массив идентификаторов, которые соответствуют rootId во втором массиве
+ * @param {Array} items - массив объектов, где у каждого есть как минимум { id, rootId, name, description }
+ * @returns {Array<{ id: string, name: string, description: string }>}
+ */
+function getSpecsBrief(specificationsIds, items, categories) {
+   try {
+        // Создаем быстрый индекс по rootId -> объект
+      const itemsRootId = new Map(items.map(item => [item.rootId, item]));
+      const categoriesRootId = new Map(categories.map(category => [category.rootId, category]));
+
+      // Проходим по списку IDs и собираем соответствующие объекты categoryId
+      const result = [];
+      for (const rootId of specificationsIds) {
+         const foundItem = itemsRootId.get(rootId);
+         const foundCategory = categoriesRootId.get(foundItem.categoryId);
+         if (foundItem) {
+            result.push({
+            id: foundItem.id,
+            fieldName: foundCategory.name ?? '',
+            fieldValue: foundItem.name ?? '',
+            sync: true
+            });
+         }
+         // Если соответствия нет, можно:
+         //  - пропускать (как сейчас),
+         //  - или добавлять плейсхолдер: { id: rootId, name: '', description: '' }
+         // Выберите вариант нужный вашей логике.
+      }
+      return result;
+   } catch (error) {
+      console.log(error)
+      return [];
+   }
+}
  
  module.exports = {
     getImportData,
@@ -318,5 +355,6 @@ const getUpdateData = async (startProjectFromByID, project, customInformationFro
     getManagers,
     getOwners,
     getUnsyncMapping,
-    getReSyncMapping
+    getReSyncMapping,
+    getSpecsBrief
  }

@@ -2,9 +2,8 @@ const db            = require("../components/db.js");
 const Log           = require("../components/log.js");
 
 class Reestr extends Log {     
-    name = "Reestr";
-    /** Функция для получения АС */
-    async getAs(LIMIT, OFFSET) {
+    name = "Reestr";    
+    async getAs(LIMIT, OFFSET) {/** Функция для получения АС */
         const query = `SELECT 
         uniq_id, 
         Kratkoe_nazvanie_prilozhenie_spisok_sinonimov, 
@@ -18,8 +17,8 @@ class Reestr extends Log {
         (Sys_sourse != 'gpbuadmin' OR Sys_sourse IS NULL)
         LIMIT ? OFFSET ?`
         const result = await db.asyncQuery(query, [LIMIT, OFFSET], true)
-        //console.log(query)
-        //console.log(result)
+        console.log(query)
+        console.log(result)
         return result
     }
     async getOwners() {

@@ -16,7 +16,7 @@ const { getImportData,
   getReSyncMapping
 } = require("../utils/utils.js")
 
-const saveFile = true
+const saveFile = false
 
 /** Флаг указывающий что в данный момент идет синхронизация */
 let syncOn = false;
