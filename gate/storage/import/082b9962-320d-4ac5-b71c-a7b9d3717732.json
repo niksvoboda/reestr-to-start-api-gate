@@ -1,0 +1,65 @@
+{
+  "id": "85e8cfb1-c714-47cd-aa24-54b845233d49",
+  "name": "Система управления документооборото3",
+  "specificationsIds": [
+    "5b3dc0f1-ac82-4c61-abc7-840211138734",
+    "7bd0f442-e2a0-4ea5-b8c1-27124ca201b0",
+    "d22384c6-af15-42a5-a462-c96c71534e3b",
+    "2e3cc3b4-3c30-4584-9de7-941820724199",
+    "f60541eb-2829-479c-9530-ec1b9e7b80ed",
+    "7feeebc3-0dd4-46bf-a8ca-171e00e0390a",
+    "1334d18c-2e8a-4314-939d-9c046466b0b7",
+    "678f8907-8067-4561-b23d-faccc095147f"
+  ],
+  "specificationsIdsSync": true,
+  "customInformation": [
+    {
+      "type": "multiline",
+      "value": "Система управления документооборото3",
+      "fieldName": "2. Полные наименования автоматизируемых процессов с указанием их кодов",
+      "sortIndex": 3,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "DocManage12",
+      "fieldName": "b. Краткое название АС",
+      "sortIndex": 4,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "1",
+      "fieldName": "c. Номер АС в Реестре АС",
+      "sortIndex": 5,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "Обработка внутренней документации3",
+      "fieldName": "5. Назначение АС, перечень выполняемых ею функций",
+      "sortIndex": 6,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "-",
+      "fieldName": "6. Заказчик АС",
+      "sortIndex": 7,
+      "fieldDescription": "",
+      "sync": true
+    },
+    {
+      "type": "multiline",
+      "value": "-----",
+      "fieldName": "7. Владелец АС",
+      "sortIndex": 8,
+      "fieldDescription": "",
+      "sync": true
+    }
+  ]
+}

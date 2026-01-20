@@ -13,7 +13,7 @@
     "port": 3306
   },
   "db_reestr":{
-    "limit": 2000,
+    "limit": 1,
     "offset": 0
   },
   "api_sync_period": 15,
